@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/prepa-cqo-armee/static/css/main.aca64467.css",
+    "main.js": "/prepa-cqo-armee/static/js/main.820352da.js",
+    "static/js/787.40bd48a7.chunk.js": "/prepa-cqo-armee/static/js/787.40bd48a7.chunk.js",
+    "static/media/AVIATEUR2.mp4": "/prepa-cqo-armee/static/media/AVIATEUR2.d4324e6575ebe8450984.mp4",
+    "static/media/rafale1920.jpg": "/prepa-cqo-armee/static/media/rafale1920.b810d0904c5cdec2ebc6.jpg",
+    "index.html": "/prepa-cqo-armee/index.html",
+    "main.aca64467.css.map": "/prepa-cqo-armee/static/css/main.aca64467.css.map",
+    "main.820352da.js.map": "/prepa-cqo-armee/static/js/main.820352da.js.map",
+    "787.40bd48a7.chunk.js.map": "/prepa-cqo-armee/static/js/787.40bd48a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aca64467.css",
+    "static/js/main.820352da.js"
+  ]
+}
