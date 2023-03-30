@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import questions from "../../data";
 import QuizzResult from "../quizzResult/QuizzResult";
 import Button from "@mui/material/Button";
+import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 // eslint-disable-next-line
 import "./Quizz.css";
+import { Link } from "react-router-dom";
 
 export default function Quizz() {
   const [currentQuestion, setCurrentQuestions] = useState(0);
@@ -62,68 +64,75 @@ export default function Quizz() {
   };
   return (
     <>
-    <div className="container-quizz">
-
-      <div className="app">
-        {showResult ? (
-          <QuizzResult
-          score={score}
-          correctAnswer={correctAnswer}
-          handlePlayAgain={handlePlayAgain}
-          />
+      <div className="container-quizz">
+        <div className="app">
+          {showResult ? (
+            <QuizzResult
+              score={score}
+              correctAnswer={correctAnswer}
+              handlePlayAgain={handlePlayAgain}
+            />
           ) : (
             <>
-            {randomQuestion.length > 0 && (
-              <>
-                <div className="question-section">
-                  <h5> Score : {score}</h5>
-                  <div className="question-count">
-                    <span>
-                      Question {currentQuestion + 1} sur {randomQuestion.length}
-                    </span>
+              {randomQuestion.length > 0 && (
+                <>
+                  <div className="question-section">
+                    <h5> Score : {score}</h5>
+                    <div className="question-count">
+                      <span>
+                        Question {currentQuestion + 1} sur{" "}
+                        {randomQuestion.length}
+                      </span>
+                    </div>
+                    <div className="question-text">
+                      {randomQuestion[currentQuestion].questionText}
+                    </div>
                   </div>
-                  <div className="question-text">
-                    {randomQuestion[currentQuestion].questionText}
-                  </div>
-                </div>
-                <div className="answer-section">
-                  {randomQuestion[currentQuestion].questionOptions.map(
-                    (ans, i) => {
-                      return (
+                  <div className="answer-section">
+                    {randomQuestion[currentQuestion].questionOptions.map(
+                      (ans, i) => {
+                        return (
+                          <Button
+                            className={`buttons ${
+                              clicked && ans.isCorrect ? "correct" : "rien"
+                            }`}
+                            disabled={clicked}
+                            key={i}
+                            onClick={() => handleAnswerOptions(ans.isCorrect)}
+                            variant="contained"
+                            style={{ margin: 2 }}
+                          >
+                            {ans.reponseChoix}
+                          </Button>
+                        );
+                      }
+                    )}
+                    <div className="actions">
+                      <Link style={{ textDecoration: "none" }} to={"/"}>
                         <Button
-                        className={`buttons ${
-                            clicked && ans.isCorrect ? "correct" : "rien"
-                          }`}
-                          disabled={clicked}
-                          key={i}
-                          onClick={() => handleAnswerOptions(ans.isCorrect)}
+                          className="btn-home-mui"
                           variant="contained"
-                          style={{ margin: 2 }}
+                          size="medium"
+                          endIcon={<ExitToAppIcon />}
                         >
-                          {ans.reponseChoix}
+                          Quitter
                         </Button>
-                      );
-                    }
-                  )}
-                  <div className="actions">
-                    <Button onClick={handlePlayAgain} variant="contained">
-                      Quitter
-                    </Button>
-                    <Button
-                      disabled={!clicked}
-                      onClick={handleNextOption}
-                      variant="contained"
+                      </Link>
+                      <Button
+                        disabled={!clicked}
+                        onClick={handleNextOption}
+                        variant="contained"
                       >
-                      Suivant
-                    </Button>
+                        Suivant
+                      </Button>
+                    </div>
                   </div>
-                </div>
-              </>
-            )}
-          </>
-        )}
+                </>
+              )}
+            </>
+          )}
+        </div>
       </div>
-            </div>
     </>
   );
 }

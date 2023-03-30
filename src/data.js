@@ -175,6 +175,195 @@ const questions = [
       { reponseChoix: "La DICoD", isCorrect: true },
       { reponseChoix: "4", isCorrect: false },
     ],
+  },{
+    questionText:
+      "Sur une base aérienne de type XXI, quel pôle n’est pas intégré dans l’état-major fonctionnel ?",
+    questionOptions: [
+      { reponseChoix: "Le pole sécurité protection", isCorrect: false },
+      { reponseChoix: "Le pole appui commandement", isCorrect: false },
+      { reponseChoix: "Le pole interface soutiens/maitrise des activités", isCorrect: false },
+      { reponseChoix: "Le pôle commandement", isCorrect: true },
+    ],
+  },{
+    questionText:
+      "Que signifie CDAOA ?",
+    questionOptions: [
+      { reponseChoix: "Commandement de détection aérienne et des opérations aériennes", isCorrect: false },
+      { reponseChoix: "Commandement de la défense aérienne et de l’organisation aérienne ", isCorrect: false },
+      { reponseChoix: "Commandement de la défense aérienne et des opérations aériennes", isCorrect: true },
+      { reponseChoix: "Commandement de la défense aérienne et de l’organisation des airs ", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Que signifie LPM ?",
+    questionOptions: [
+      { reponseChoix: "Loi de prévention militaire", isCorrect: false },
+      { reponseChoix: "Législation de programmation", isCorrect: false },
+      { reponseChoix: "Loi de programmation militaire", isCorrect: true },
+      { reponseChoix: "Loi de programmation managériale", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
+    questionOptions: [
+      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICoD", isCorrect: true },
+      { reponseChoix: "4", isCorrect: false },
+    ],
   },
 ];
 export default questions
