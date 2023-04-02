@@ -5,7 +5,8 @@ import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import Fade from '@mui/material/Fade';
-import Typography from '@mui/material/Typography';
+import './modale.css'
+// import Typography from '@mui/material/Typography';
 
 const style = {
   position: 'absolute',
@@ -18,6 +19,10 @@ const style = {
   background: 'linear-gradient(135deg,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0))',
   backdropFilter: 'blur(50px)', 
   p: 4,
+  display:'flex',
+  justifyContent:'center',
+  alignItems:'center',
+  flexDirection:'column'
 };
 
 export default function TransitionsModal(props) {
@@ -39,8 +44,8 @@ export default function TransitionsModal(props) {
         }}
       >
         <Fade in={props.open}>
-          <Box sx={style} className='bgModal'>
-          <img src= {question} className='imgQuestion'/>
+          <Box sx={style} >
+          <img src={question} className='imgQuestion' alt="questions"/>
           <SimpleAccordion/>
           </Box>
         </Fade>

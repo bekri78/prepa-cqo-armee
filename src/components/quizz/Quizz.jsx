@@ -7,8 +7,9 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import ContactSupportIcon from '@mui/icons-material/ContactSupport';
+import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import Button from "@mui/material/Button";
+import EmailIcon from "@mui/icons-material/Email";
 import "./Quizz.css";
 
 export default function Quizz() {
@@ -28,7 +29,7 @@ export default function Quizz() {
 
   const getRandomItemsFromArray = (arr) => {
     let randomIndices = [];
-    while (randomIndices.length < 2) {
+    while (randomIndices.length < 38) {
       let index = Math.floor(Math.random() * arr.length);
       if (!randomIndices.includes(index)) {
         randomIndices.push(index);
@@ -68,7 +69,6 @@ export default function Quizz() {
     setShowResult(false);
   };
 
- 
   return (
     <>
       <div className="container-quizz">
@@ -100,31 +100,26 @@ export default function Quizz() {
 
                     <Col xs={12} sm={12} md={6} lg={6}>
                       <div className="answer-section">
-
-
-                       
                         {randomQuestion[currentQuestion].questionOptions?.map(
-                            (ans, i) => {
-                              return (
-                                <Button
-                                  className={`buttons ${
-                                    clicked && ans.isCorrect
-                                      ? "correct"
-                                      : "rien"
-                                  }`}
-                                  disabled={clicked}
-                                  key={i}
-                                  onClick={() =>
-                                    handleAnswerOptions(ans.isCorrect)
-                                  }
-                                  variant="contained"
-                                  style={{ margin: 2 }}
-                                >
-                                  {ans.reponseChoix}
-                                </Button>
-                              );
-                            }
-                          )}
+                          (ans, i) => {
+                            return (
+                              <Button
+                                className={`buttons ${
+                                  clicked && ans.isCorrect ? "correct" : "rien"
+                                }`}
+                                disabled={clicked}
+                                key={i}
+                                onClick={() =>
+                                  handleAnswerOptions(ans.isCorrect)
+                                }
+                                variant="contained"
+                                style={{ margin: 2 }}
+                              >
+                                {ans.reponseChoix}
+                              </Button>
+                            );
+                          }
+                        )}
 
                         <div className="actions">
                           <Link style={{ textDecoration: "none" }} to={"/"}>
@@ -156,10 +151,20 @@ export default function Quizz() {
             </>
           )}
         </div>
-      <div className="questions"> <ContactSupportIcon  onClick={()=> setOpenModal(!openModal)} style={{ marginRight:10, marginTop:10}} /></div>
-     
+        <div className="questions">
+          <ContactSupportIcon
+            onClick={() => setOpenModal(!openModal)}
+            style={{ marginRight: 10, marginTop: 10 }}
+          />
+          <Link style={{ textDecoration: "none" }} to={"/email"}>
+            <EmailIcon  style={{ marginRight: 10, marginTop: 10 }} />
+          </Link>
+        </div>
       </div>
-      <TransitionsModal closeModal={closeModal => setOpenModal(closeModal)} open={openModal}/>
+      <TransitionsModal
+        closeModal={(closeModal) => setOpenModal(closeModal)}
+        open={openModal}
+      />
     </>
   );
 }
