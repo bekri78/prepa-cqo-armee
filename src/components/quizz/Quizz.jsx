@@ -25,7 +25,7 @@ export default function Quizz() {
 
   const getRandomItemsFromArray = (arr) => {
     let randomIndices = [];
-    while (randomIndices.length < 10) {
+    while (randomIndices.length < 38) {
       let index = Math.floor(Math.random() * arr.length);
       if (!randomIndices.includes(index)) {
         randomIndices.push(index);
@@ -80,7 +80,7 @@ export default function Quizz() {
                 <Container>
                   <Row>
                         <div className="question-count">
-                        <h5> Score : {score}</h5>
+                        {/* <h5> Score : {score}</h5> */}
                           <span>
                             Question {currentQuestion + 1} sur{" "}
                             {randomQuestion.length}

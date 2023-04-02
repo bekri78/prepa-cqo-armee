@@ -62,6 +62,7 @@ if(note){
             size="medium"
             color="secondary"
             endIcon={<CachedIcon />}
+            style={{marginRight:1}}
           >
             Encore
           </Button>
