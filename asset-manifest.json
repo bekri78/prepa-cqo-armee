@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/prepa-cqo-armee/static/css/main.33fb0c7c.css",
-    "main.js": "/prepa-cqo-armee/static/js/main.d8bd39c8.js",
+    "main.css": "/prepa-cqo-armee/static/css/main.8049d0aa.css",
+    "main.js": "/prepa-cqo-armee/static/js/main.51b7b81d.js",
     "static/js/787.40bd48a7.chunk.js": "/prepa-cqo-armee/static/js/787.40bd48a7.chunk.js",
     "static/media/aviateur.jpg": "/prepa-cqo-armee/static/media/aviateur.ce092c724f42add3bbcc.jpg",
+    "static/media/mobile-bg.jpg": "/prepa-cqo-armee/static/media/mobile-bg.a301e771e2516c475ec5.jpg",
     "static/media/avion-dark.webp": "/prepa-cqo-armee/static/media/avion-dark.3371f580ba5875bcbf61.webp",
     "index.html": "/prepa-cqo-armee/index.html",
-    "main.33fb0c7c.css.map": "/prepa-cqo-armee/static/css/main.33fb0c7c.css.map",
-    "main.d8bd39c8.js.map": "/prepa-cqo-armee/static/js/main.d8bd39c8.js.map",
+    "main.8049d0aa.css.map": "/prepa-cqo-armee/static/css/main.8049d0aa.css.map",
+    "main.51b7b81d.js.map": "/prepa-cqo-armee/static/js/main.51b7b81d.js.map",
     "787.40bd48a7.chunk.js.map": "/prepa-cqo-armee/static/js/787.40bd48a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33fb0c7c.css",
-    "static/js/main.d8bd39c8.js"
+    "static/css/main.8049d0aa.css",
+    "static/js/main.51b7b81d.js"
   ]
 }
