@@ -21,7 +21,7 @@ export default function NoPage() {
     
       <div style={{width:'50%'}} ref={container} />
       <div style={{display:'flex', justifyContent:'center', alignItems:'center', flexDirection:"column"}}>
-      <h1 style={{color:"white"}}> Chef ! Nous sommes perdu... </h1> 
+      <h1 style={{color:"white"}}> Chef ! Nous sommes perdues... </h1> 
       <Link style={{ textDecoration: "none" }} to={"/"}>
             <Button
               variant="contained"

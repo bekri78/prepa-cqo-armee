@@ -109,3 +109,12 @@
   background-color: #234668;
   color: white;
 } */
+.questions {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  cursor: pointer;
+}

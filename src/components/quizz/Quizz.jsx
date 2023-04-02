@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import questions from "../../data";
 import QuizzResult from "../quizzResult/QuizzResult";
+import TransitionsModal from "../modal/modal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
+import ContactSupportIcon from '@mui/icons-material/ContactSupport';
 import Button from "@mui/material/Button";
 import "./Quizz.css";
 
@@ -16,6 +18,7 @@ export default function Quizz() {
   const [showResult, setShowResult] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [randomQuestion, setRandomQuestion] = useState([]);
+  const [openModal, setOpenModal] = useState(false);
 
   useEffect(() => {
     if (questions !== null) {
@@ -25,7 +28,7 @@ export default function Quizz() {
 
   const getRandomItemsFromArray = (arr) => {
     let randomIndices = [];
-    while (randomIndices.length < 38) {
+    while (randomIndices.length < 2) {
       let index = Math.floor(Math.random() * arr.length);
       if (!randomIndices.includes(index)) {
         randomIndices.push(index);
@@ -64,6 +67,8 @@ export default function Quizz() {
     setCorrectAnswer(0);
     setShowResult(false);
   };
+
+ 
   return (
     <>
       <div className="container-quizz">
@@ -79,12 +84,12 @@ export default function Quizz() {
               {randomQuestion.length > 0 && (
                 <Container>
                   <Row>
-                        <div className="question-count">
-                          <span>
-                            Question {currentQuestion + 1} sur{" "}
-                            {randomQuestion.length}
-                          </span>
-                        </div>
+                    <div className="question-count">
+                      <span>
+                        Question {currentQuestion + 1} sur{" "}
+                        {randomQuestion.length}
+                      </span>
+                    </div>
                     <Col xs={12} sm={12} md={6} lg={6}>
                       <div className="question-section">
                         <div className="question-text">
@@ -92,31 +97,35 @@ export default function Quizz() {
                         </div>
                       </div>
                     </Col>
-                
 
-                  
                     <Col xs={12} sm={12} md={6} lg={6}>
                       <div className="answer-section">
-                        {randomQuestion[currentQuestion].questionOptions.map(
-                          (ans, i) => {
-                            return (
-                              <Button
-                                className={`buttons ${
-                                  clicked && ans.isCorrect ? "correct" : "rien"
-                                }`}
-                                disabled={clicked}
-                                key={i}
-                                onClick={() =>
-                                  handleAnswerOptions(ans.isCorrect)
-                                }
-                                variant="contained"
-                                style={{ margin: 2 }}
-                              >
-                                {ans.reponseChoix}
-                              </Button>
-                            );
-                          }
-                        )}
+
+
+                       
+                        {randomQuestion[currentQuestion].questionOptions?.map(
+                            (ans, i) => {
+                              return (
+                                <Button
+                                  className={`buttons ${
+                                    clicked && ans.isCorrect
+                                      ? "correct"
+                                      : "rien"
+                                  }`}
+                                  disabled={clicked}
+                                  key={i}
+                                  onClick={() =>
+                                    handleAnswerOptions(ans.isCorrect)
+                                  }
+                                  variant="contained"
+                                  style={{ margin: 2 }}
+                                >
+                                  {ans.reponseChoix}
+                                </Button>
+                              );
+                            }
+                          )}
+
                         <div className="actions">
                           <Link style={{ textDecoration: "none" }} to={"/"}>
                             <Button
@@ -130,7 +139,6 @@ export default function Quizz() {
                             </Button>
                           </Link>
                           <Button
-                          
                             disabled={!clicked}
                             onClick={handleNextOption}
                             variant="contained"
@@ -142,13 +150,16 @@ export default function Quizz() {
                         </div>
                       </div>
                     </Col>
-                    </Row>
+                  </Row>
                 </Container>
               )}
             </>
           )}
         </div>
+      <div className="questions"> <ContactSupportIcon  onClick={()=> setOpenModal(!openModal)} style={{ marginRight:10, marginTop:10}} /></div>
+     
       </div>
+      <TransitionsModal closeModal={closeModal => setOpenModal(closeModal)} open={openModal}/>
     </>
   );
 }
