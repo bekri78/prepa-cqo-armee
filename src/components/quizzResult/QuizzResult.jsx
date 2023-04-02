@@ -12,7 +12,7 @@ export default function QuizzResult(props) {
   const [note, setNote] = useState(true);
 
   const convertScore = (score) => {
-    let moyenne = (score * 20) / 38;
+    let moyenne = (score / 38) * 20;
     let reussite = moyenne >= 12 ? true : false;
     return setNote(reussite);
   };
@@ -59,17 +59,19 @@ if(note){
             onClick={props.handlePlayAgain}
             className="btn-home-mui"
             variant="contained"
-            size="large"
+            size="medium"
+            color="secondary"
             endIcon={<CachedIcon />}
           >
-            Recommencer
+            Encore
           </Button>
 
           <Link style={{ textDecoration: "none" }} to={"/"}>
             <Button
               className="btn-home-mui"
               variant="contained"
-              size="large"
+              size="medium"
+              color="secondary"
               endIcon={<ExitToAppIcon />}
             >
               Quitter
