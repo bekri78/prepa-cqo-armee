@@ -15,12 +15,12 @@ export default function Home() {
     <div className="landingpage">
       
       <div className="container-home">
-        <h1
+        <h1 
           data-aos="fade-zoom-in"
           data-aos-duration="1500"
           className="title-home"
         >
-          Preparation C.Q.O<br></br>Promotion OSC 2023A
+          Préparation C.Q.O<br></br>Promotion OSC 2023A
         </h1>
         <div data-aos="fade-up"data-aos-duration="1500" className="home-btn">
           <Link style={{ textDecoration: "none" }} to={"./quizz"}>
