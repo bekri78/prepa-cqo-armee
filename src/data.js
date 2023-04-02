@@ -637,10 +637,10 @@ const questions = [
     questionText:
       "Comment déterminer sa position ?",
     questionOptions: [
-      { reponseChoix: "Creuser un trou et ne rien faire[Text Wrapping Break]", isCorrect: false },
+      { reponseChoix: "Creuser un trou et ne rien faire", isCorrect: false },
       { reponseChoix: "Se mettre en PLS", isCorrect: false },
       { reponseChoix: "Localiser un avion dans le ciel et le suivre", isCorrect: false },
-      { reponseChoix: "Ltiliser sa boussole et sa carte", isCorrect: true },
+      { reponseChoix: "Utiliser sa boussole et sa carte", isCorrect: true },
     ],
   },{
     questionText:

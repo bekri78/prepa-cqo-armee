@@ -18,39 +18,36 @@ export default function QuizzResult(props) {
   };
 
   useEffect(() => {
-if(note){
-
-  lottie.loadAnimation({
-    container: container.current,
-    render: "svg",
-    loop: true,
-    autoplay: true,
-    animationData: require("../../utils/lotties/celebrate.json"),
-  });
-}else{
-  lottie.loadAnimation({
-    container: container.current,
-    render: "svg",
-    loop: true,
-    autoplay: true,
-    animationData: require("../../utils/lotties/echec.json"),
-  });
-}
-    
-     
+    if (note) {
+      lottie.loadAnimation({
+        container: container.current,
+        render: "svg",
+        loop: true,
+        autoplay: true,
+        animationData: require("../../utils/lotties/celebrate.json"),
+      });
+    } else {
+      lottie.loadAnimation({
+        container: container.current,
+        render: "svg",
+        loop: true,
+        autoplay: true,
+        animationData: require("../../utils/lotties/echec.json"),
+      });
+    }
   }, []);
-
-
-  
 
   return (
     <>
       <div className="score-section">
-   
-          <>
-            <div className="container" ref={container} />
-            {note ? ( <h2> Felicitation vous avez votre C.Q.O !</h2> ) : (  <h2> Echec recommencer pour vous améliorer !</h2> )}
-          </>
+        <>
+          <div className="container" ref={container} />
+          {note ? (
+            <h2> Felicitation vous avez votre C.Q.O !</h2>
+          ) : (
+            <h2> Echec recommencer pour vous améliorer !</h2>
+          )}
+        </>
 
         <h4> Votre note {props.score}/20</h4>
         <h4> Nombre de reponses correctes {props.correctAnswer} sur 38</h4>
@@ -62,7 +59,7 @@ if(note){
             size="medium"
             color="secondary"
             endIcon={<CachedIcon />}
-            style={{marginRight:1}}
+            style={{ marginRight: 1 }}
           >
             Encore
           </Button>

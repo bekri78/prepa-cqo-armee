@@ -80,7 +80,6 @@ export default function Quizz() {
                 <Container>
                   <Row>
                         <div className="question-count">
-                        {/* <h5> Score : {score}</h5> */}
                           <span>
                             Question {currentQuestion + 1} sur{" "}
                             {randomQuestion.length}
