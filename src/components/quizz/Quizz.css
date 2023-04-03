@@ -119,3 +119,26 @@
   align-items: center;
   cursor: pointer;
 }
+
+.signature {
+  width: 100%;
+  height: 5%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container-signature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1%;
+  font-size: 15px;
+}
+@media screen and (max-width: 500px) {
+  .signature {
+    justify-content: center;
+  }
+}

@@ -167,8 +167,7 @@ export default function Email() {
       </Card>
       <div className="home-form">
       <Link style={{ textDecoration: "none"}} to={"/"}>
-
-        <Chip style={{cursor:"pointer"}} icon={<HomeIcon />} label="Accueil" />{" "}
+        <Chip  style={{cursor:"pointer",display: 'flex',alignItems: 'center',flexDirection: 'column',justifyContent: 'center',height: 'auto', width:'100%'}} icon={<HomeIcon style={{fontSize: '2em'}} />} label="Accueil" />{" "}
       </Link>
       </div>
     </div>

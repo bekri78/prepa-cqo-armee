@@ -27,3 +27,7 @@
   justify-content: flex-end;
   align-items: center;
 }
+.MuiChip-icon {
+  margin-right: inherit !important;
+  margin-left: inherit !important;
+}
