@@ -56,7 +56,7 @@ export default function QuizzResult(props) {
     <>
       <div className="score-section">
         <>
-          <div style={{width:'100%', margin:'auto', marginBottom:"10%"}} ref={container} />
+          <div style={{width:'60%', margin:'auto', marginBottom:"10%"}} ref={container} />
           {note ? (
             <Typography  variant="h5" style={{color:"white "}}  >
            Félicitation vous avez votre C.Q.O !

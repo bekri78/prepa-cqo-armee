@@ -16,7 +16,7 @@ const questions = [
       { reponseChoix: "EMA COM", isCorrect: false },
       { reponseChoix: "Les DIRCOMS respectifs", isCorrect: true },
       { reponseChoix: "Les commandants de base", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "Les VASP", isCorrect: false },
     ],
   },
   {
@@ -114,7 +114,7 @@ const questions = [
           "Service d'Informations et de Relations Publiques des Armées",
         isCorrect: true,
       },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "Service de désinformation et de Relations Publiques", isCorrect: false },
     ],
   },
   {
