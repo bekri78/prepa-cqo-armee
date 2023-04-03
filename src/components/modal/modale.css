@@ -1,0 +1,8 @@
+.modale-quizz {
+}
+
+@media screen and (max-width: 500px) {
+  .modale-quizz {
+    width: 100% !important;
+  }
+}

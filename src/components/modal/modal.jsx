@@ -44,8 +44,8 @@ export default function TransitionsModal(props) {
         }}
       >
         <Fade in={props.open}>
-          <Box sx={style} >
-          <img src={question} style={{width:'100%'}} className='imgQuestion' alt="questions"/>
+          <Box sx={style}  className='modale-quizz' >
+          <img src={question} style={{width:'70%'}} className='imgQuestion' alt="questions"/>
           <SimpleAccordion/>
           </Box>
         </Fade>

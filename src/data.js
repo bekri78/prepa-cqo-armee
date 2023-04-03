@@ -3,19 +3,19 @@ const questions = [
     questionText:
       "Quel est l'organisme qui coordonne les actions de communication institutionnelle du ministère des armées ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "La DICOM", isCorrect: false },
+      { reponseChoix: "La SIG", isCorrect: false },
       { reponseChoix: "La DICoD", isCorrect: true },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "ECPAD", isCorrect: false },
     ],
   },
   {
     questionText:
       "Dans les Ministères autres que le MinArm, qui est en charge de la communication ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "EMA COM", isCorrect: false },
       { reponseChoix: "Les DIRCOMS respectifs", isCorrect: true },
-      { reponseChoix: "3", isCorrect: false },
+      { reponseChoix: "Les commandants de base", isCorrect: false },
       { reponseChoix: "4", isCorrect: false },
     ],
   },
@@ -33,41 +33,41 @@ const questions = [
     questionText:
       "Un journaliste vous contacte pour une ITW dans une semaine, que devez-vous faire ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "Lui répondre rapidement pour ne pas le faire attendre", isCorrect: false },
+      { reponseChoix: "Briefer son unité sur la potentielle arrivée de ce journaliste", isCorrect: false },
       {
         reponseChoix:
           "Contacter l'officier communication et mon CDU afin d'être autorisé à s'exprimer et de préparer l'interview le cas échéant",
         isCorrect: true,
       },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "Demander une autorisation d'interview par le CEMA", isCorrect: false },
     ],
   },
   {
     questionText:
       "Quel est le média d'information le plus consulté par les français ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "La radio", isCorrect: false },
       { reponseChoix: "La télévision", isCorrect: true },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "TIKTOK", isCorrect: false },
+      { reponseChoix: "Instagram", isCorrect: false },
     ],
   },
   {
     questionText: "Quand un interview commence-t-il ?",
     questionOptions: [
       { reponseChoix: "Dès la présence du journaliste", isCorrect: true },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "Au premier échange, de n’importe quelle nature qu’il soit", isCorrect: false },
+      { reponseChoix: "Lorsque le journaliste pose sa première question", isCorrect: false },
+      { reponseChoix: "Au café avant l’entretien", isCorrect: false },
     ],
   },
   {
     questionText: "Quels sont les deux types de crise ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
+      { reponseChoix: "Sous-jacente et Spontanée", isCorrect: false },
+      { reponseChoix: "Latente et Imprévue", isCorrect: false },
+      { reponseChoix: "Souterraine et Imprévisible", isCorrect: false },
       { reponseChoix: "Sous-jacente et Imprévue", isCorrect: true },
     ],
   },
@@ -75,19 +75,19 @@ const questions = [
     questionText:
       "Quel service communique les informations relatives à l'emploi des forces ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "Le CIRFA", isCorrect: false },
       { reponseChoix: "La DICoD", isCorrect: true },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "Le SIRPA", isCorrect: false },
+      { reponseChoix: "La DIRCOM", isCorrect: false },
     ],
   },
   {
     questionText:
       "Quand est signée la déclaration des devoirs et des droits des journalistes ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
+      { reponseChoix: "En 2012", isCorrect: false },
+      { reponseChoix: "En 1980", isCorrect: false },
+      { reponseChoix: "En 1972", isCorrect: false },
       { reponseChoix: "En 1971", isCorrect: true },
     ],
   },
@@ -107,8 +107,8 @@ const questions = [
   {
     questionText: "Que signifie l'acronyme SIRPA ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
+      { reponseChoix: "Section d’Informations et de Reproductions des Armées", isCorrect: false },
+      { reponseChoix: "Section d'Inspection et de Réparation des Pays Alliés", isCorrect: false },
       {
         reponseChoix:
           "Service d'Informations et de Relations Publiques des Armées",
@@ -143,7 +143,7 @@ const questions = [
     questionText:
       "Parmi ces 4 propositions, laquelle est un enjeu de la communication des armées ?",
     questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
+      { reponseChoix: "Préserver les relations avec les pays de l'OTAN", isCorrect: false },
       {
         reponseChoix:
           "Préserver le secret des opérations et la sécurité du personnel",
@@ -158,12 +158,11 @@ const questions = [
       "À partir de quel pourcentage de revenu la carte d'identité des journalistes professionnels est-elle attribuée ?",
     questionOptions: [
       {
-        reponseChoix: "À partir de 51% des revenus liés au journalisme",
-        isCorrect: true,
+        reponseChoix: "À partir de 51% des revenus liés au journalisme",isCorrect: true,
       },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
+      { reponseChoix: "À partir de 80% des revenus liés au journalisme", isCorrect: false },
+      { reponseChoix: "Jamais", isCorrect: false },
+      { reponseChoix: "À partir de 61% des revenus liés au journalisme", isCorrect: false },
     ],
   },
   {
@@ -1031,7 +1030,7 @@ const questions = [
     ],
   },{
     questionText:
-      "Qui a dit «Les aéroplanes sont aussi indispensables aux armées que les canons et les fusils c’est une vérité qu’il faut admettre sous peine d’avoi à la subir de force » ?",
+      "Qui a dit «Les aéroplanes sont aussi indispensables aux armées que les canons et les fusils c’est une vérité qu’il faut admettre sous peine d’avoir à la subir de force » ?",
     questionOptions: [
       { reponseChoix: "Général Foch", isCorrect: false },
       { reponseChoix: "Général Kenoby", isCorrect: false },
