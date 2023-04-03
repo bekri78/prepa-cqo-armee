@@ -26,7 +26,7 @@ export default function QuizzResult(props) {
   }, [props.score]);
 
   useEffect(() => {
-    if (note) {
+    if (note === true) {
       lottie.loadAnimation({
         container: container.current,
         render: "svg",

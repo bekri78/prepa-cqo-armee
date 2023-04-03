@@ -27,6 +27,15 @@ export default function Quizz() {
     }
   }, [showResult]);
 
+  useEffect(()=> {
+    const tbl =JSON.parse(window.localStorage.getItem('randomQuestionCQO'))
+    if(tbl !== null) {
+      
+     setRandomQuestion(tbl)
+    }
+
+  },[])
+
   const getRandomItemsFromArray = (arr) => {
     let randomIndices = [];
     while (randomIndices.length < 38) {
@@ -41,8 +50,8 @@ export default function Quizz() {
     randomIndices.forEach((index) => {
       nouveauTableau.push(arr[index]);
     });
-
-    return setRandomQuestion(nouveauTableau);
+    
+    return window.localStorage.setItem('randomQuestionCQO', JSON.stringify(nouveauTableau));
   };
 
   const handleAnswerOptions = (isCorrect) => {

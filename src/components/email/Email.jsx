@@ -93,7 +93,7 @@ export default function Email() {
             variant="body2"
             component="p"
           >
-            Pour toute suggestion remplissez le formulaire, je reviendrais vers
+            Pour toute suggestion remplissez le formulaire, je reviendrai vers
             vous au plus vite.
           </Typography>
           <form>
