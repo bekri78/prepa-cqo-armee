@@ -6,61 +6,81 @@ import Button from "@mui/material/Button";
 import Divider from '@mui/material/Divider';
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import CachedIcon from "@mui/icons-material/Cached";
+import {Typography } from "@mui/material";
 
 export default function QuizzResult(props) {
   const container = useRef(null);
-  const [note, setNote] = useState(false);
+  const [note, setNote] = useState(null);
   const [moyenneSur20, setMoyenneSur20] = useState(false);
+
+  
 
   const convertScore = (score) => {
     let moyenne = Math.round((score / 38) * 20);
     let reussite = moyenne >= 12 ? true : false;
+    reussite === true ? victoire(): fail ()
     return setNote(reussite), setMoyenneSur20(moyenne);
   };
+
+  const fail= ()=> {
+    lottie.loadAnimation({
+      container: container.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("../../utils/lotties/echec.json"),
+    });
+  }
+
+  const victoire = ()=> {
+    lottie.loadAnimation({
+      container: container.current,
+      render: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: require("../../utils/lotties/celebrate.json"),
+    });
+  }
+  
 
   useEffect(() => {
     let score = props.score;
     if (score !== null) {
-      convertScore(score);
+      convertScore(score);  
     }
+   
   }, [props.score]);
 
-  useEffect(() => {
-    if (note === true) {
-      lottie.loadAnimation({
-        container: container.current,
-        render: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: require("../../utils/lotties/celebrate.json"),
-      });
-    } else {
-      lottie.loadAnimation({
-        container: container.current,
-        render: "svg",
-        loop: true,
-        autoplay: true,
-        animationData: require("../../utils/lotties/echec.json"),
-      });
-    }
-  }, []);
-
+  
   return (
     <>
       <div className="score-section">
         <>
-          <div style={{width:'60%', margin:'auto'}} ref={container} />
+          <div style={{width:'100%', margin:'auto', marginBottom:"10%"}} ref={container} />
           {note ? (
-            <h2> Félicitation vous avez votre C.Q.O !</h2>
+            <Typography  variant="h5" style={{color:"white "}}  >
+           Félicitation vous avez votre C.Q.O !
+          </Typography>
+          
           ) : (
-            <h2> Recommencez pour vous améliorer !</h2>
+            <Typography gutterBottom variant="h5" color="white">
+            Recommencez pour vous améliorer !
+           </Typography>
+           
           )}
        
         </>
         <Divider  color="#fffff" sx={{ height: "1px"}} variant="middle"/>
-        <h4> Votre note {moyenneSur20}/20</h4>
+        <Typography  variant="h6" style={{color:"white "}}  >
+        Votre note {moyenneSur20}/20
+          </Typography>
+
         <Divider  color="#fffff" sx={{ height: "1px"}} variant="middle"/>
-        <h4> Nombres de reponses correctes {props.correctAnswer} sur 38</h4>
+        <Typography  variant="h6" style={{color:"white "}}  >
+       Nombres de réponses correctes {props.correctAnswer} sur 38
+     
+          </Typography>
+        
         <div className="container-btn-exit">
           <Button
             onClick={props.handlePlayAgain}

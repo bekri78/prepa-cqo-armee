@@ -909,7 +909,7 @@ const questions = [
       { reponseChoix: "Georges Guynemer", isCorrect: false },
       { reponseChoix: "Clément Ader", isCorrect: true },
       { reponseChoix: "Charles Lindbergh ", isCorrect: false },
-      { reponseChoix: "GJean-Marie Messier", isCorrect: false },
+      { reponseChoix: "Jean-Marie Messier", isCorrect: false },
     ],
   },{
     questionText:
@@ -1041,7 +1041,7 @@ const questions = [
     questionText:
       "A quoi correspond une politique de défense ?",
     questionOptions: [
-      { reponseChoix: "C’est une politique publique en temps de paix, éviter la guerre, préparer la conduite et la guerre", isCorrect: false },
+      { reponseChoix: "C’est une politique publique en temps de paix, faire la guerre, préparer la conduite et la guerre", isCorrect: false },
       { reponseChoix: "C’est une politique publique en temps de guerre, afin de faire basculer la guerre", isCorrect: false },
       { reponseChoix: "C’est une politique publique en temps de paix, éviter la guerre, préparer la conduite et la guerre", isCorrect: true },
       { reponseChoix: "C’est une politique publique en temps de paix, visant à déclencher la guerre à moyen terme", isCorrect: false },
