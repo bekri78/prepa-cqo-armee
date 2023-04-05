@@ -10,6 +10,7 @@ import ExitToAppIcon from "@mui/icons-material/ExitToApp";
 import ContactSupportIcon from "@mui/icons-material/ContactSupport";
 import Button from "@mui/material/Button";
 import EmailIcon from "@mui/icons-material/Email";
+import InsightsIcon from '@mui/icons-material/Insights';
 import "./Quizz.css";
 
 export default function Quizz() {
@@ -162,6 +163,9 @@ export default function Quizz() {
         </div>
           <div className="signature"><div className="container-signature"> <p style={{margin:'unset',  marginRight:3}}>Developed by </p><a style={{textDecoration:'none'}} href="https://www.linkedin.com/in/mehdi-bekri/" target="_blank"> Mister_B_For_You</a></div> </div>
         <div className="questions">
+           <Link style={{ textDecoration: "none" }} to={"/stat"}>
+            <InsightsIcon  style={{ marginRight: 10, marginTop: 10,fontSize: '2em' }} />
+          </Link>
           <ContactSupportIcon
             onClick={() => setOpenModal(!openModal)}
             style={{ marginRight: 10, marginTop: 10,fontSize: '2em' }}

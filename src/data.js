@@ -954,7 +954,7 @@ const questions = [
       { reponseChoix: "Chalons > Strasbourg", isCorrect: false },
       { reponseChoix: "Chalons > Vincennes", isCorrect: true },
       { reponseChoix: "Chalons > Paris", isCorrect: false },
-      { reponseChoix: "NChalons > Bourges", isCorrect: false },
+      { reponseChoix: "Chalons > Bourges", isCorrect: false },
     ],
   },{
     questionText:
