@@ -21,16 +21,6 @@ const questions = [
   },
   {
     questionText:
-      "Lorsqu’un évènement s’est produit récemment, on dit qu’il relève de :",
-    questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "Proximité chronologique", isCorrect: true },
-      { reponseChoix: "4", isCorrect: false },
-    ],
-  },
-  {
-    questionText:
       "Un journaliste vous contacte pour une ITW dans une semaine, que devez-vous faire ?",
     questionOptions: [
       { reponseChoix: "Lui répondre rapidement pour ne pas le faire attendre", isCorrect: false },
@@ -92,19 +82,6 @@ const questions = [
     ],
   },
   {
-    questionText: "Qu'est-ce que la Com OPS ?",
-    questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      {
-        reponseChoix:
-          "L'ensemble des activités menées pour communiquer publiquement sur une opération militaire en suivant une doctrine",
-        isCorrect: true,
-      },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
-    ],
-  },
-  {
     questionText: "Que signifie l'acronyme SIRPA ?",
     questionOptions: [
       { reponseChoix: "Section d’Informations et de Reproductions des Armées", isCorrect: false },
@@ -115,42 +92,6 @@ const questions = [
         isCorrect: true,
       },
       { reponseChoix: "Service de désinformation et de Relations Publiques", isCorrect: false },
-    ],
-  },
-  {
-    questionText: "Quels sont les 2 types de communication ouverte ?",
-    questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "Réactive et Proactive", isCorrect: true },
-    ],
-  },
-  {
-    questionText: "Laquelle de ces affirmations est fausse :",
-    questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      {
-        reponseChoix:
-          "L’ECPAD transmet publiquement toutes ses photos à ceux qui le souhaitent",
-        isCorrect: true,
-      },
-      { reponseChoix: "4", isCorrect: false },
-    ],
-  },
-  {
-    questionText:
-      "Parmi ces 4 propositions, laquelle est un enjeu de la communication des armées ?",
-    questionOptions: [
-      { reponseChoix: "Préserver les relations avec les pays de l'OTAN", isCorrect: false },
-      {
-        reponseChoix:
-          "Préserver le secret des opérations et la sécurité du personnel",
-        isCorrect: true,
-      },
-      { reponseChoix: "3", isCorrect: false },
-      { reponseChoix: "4", isCorrect: false },
     ],
   },
   {
@@ -166,15 +107,6 @@ const questions = [
     ],
   },
   {
-    questionText:
-      "Quel est l'organisme chargé de proposer et de conduire la communication du MinArm et de coordonner les communications spécifiques de ses armées ?",
-    questionOptions: [
-      { reponseChoix: "1", isCorrect: false },
-      { reponseChoix: "2", isCorrect: false },
-      { reponseChoix: "La DICoD", isCorrect: true },
-      { reponseChoix: "4", isCorrect: false },
-    ],
-  },{
     questionText:
       "Sur une base aérienne de type XXI, quel pôle n’est pas intégré dans l’état-major fonctionnel ?",
     questionOptions: [
@@ -882,7 +814,7 @@ const questions = [
       { reponseChoix: "Organisation centrale Territoriale des forces de Défense", isCorrect: false },
       { reponseChoix: "Organisation Territoriale interarmées de Défense", isCorrect: true },
       { reponseChoix: "Organisme Territorial interarmées de Défense", isCorrect: false },
-      { reponseChoix: "Organisation Territoriale interarmées de Défense ", isCorrect: false },
+      { reponseChoix: "Organisation Territoriale interarmées de Guerre ", isCorrect: false },
     ],
   },{
     questionText:
@@ -1072,6 +1004,87 @@ const questions = [
       { reponseChoix: "2008", isCorrect: true },
       { reponseChoix: "2007", isCorrect: false },
       { reponseChoix: "2010", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Laquelle des armes suivantes ne fait pas partie des agents biologiques ?",
+    questionOptions: [
+      { reponseChoix: "Les virus", isCorrect: false },
+      { reponseChoix: "Les toxines et secretion de bacteries", isCorrect: false },
+      { reponseChoix: "Les produits toxiques et incapacitants", isCorrect: false },
+      { reponseChoix: "Les hormones sécrétéés par les plantes", isCorrect: true },
+    ],
+  },{
+    questionText:
+      "Qui est l'actuel Commandant supreme de la transformation alliée ?",
+    questionOptions: [
+      { reponseChoix: "M.Jens Solfenberg", isCorrect: false },
+      { reponseChoix: "General Curtis M. Scaparotti", isCorrect: false },
+      { reponseChoix: "General Philippe Lavigne", isCorrect: true },
+      { reponseChoix: "General Petr Pavel", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Qu'est-ce que le code de la Défense ?",
+    questionOptions: [
+      { reponseChoix: "L'ensemble des dispositifs legislatifs et reglementaire sur la defense national", isCorrect: true },
+      { reponseChoix: "Le statut général des militaires", isCorrect: false },
+      { reponseChoix: "Un ensemble d'instructions régissant les status", isCorrect: false },
+      { reponseChoix: "L'ensemble des règlement s'appliquant aux militaires", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Selon l'article L1111-1 du code de la defense, quel est l'objet de la politique de defense ?",
+    questionOptions: [
+      { reponseChoix: "Assurer l'integrité de la defense et de la securité national", isCorrect: false },
+      { reponseChoix: "Assurer l'integrité du territoire et la protection de la population contre les agressions armées", isCorrect: true },
+      { reponseChoix: "Assurer la securité du territoire contre le terrorisme", isCorrect: false },
+      { reponseChoix: "Assurer la securité du territoire a l'aide de l'arme nucleaire", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Que peut entrainer le non-respect d'une obligation de prudence d'un tireur entrainant la mise en danger d'autrui ?",
+    questionOptions: [
+      { reponseChoix: "La responsabilité du commandant de base", isCorrect: false },
+      { reponseChoix: "5 ans d'emprisonnement et 200000 euros d'amende", isCorrect: false },
+      { reponseChoix: "La responsabilté penale de son auteur", isCorrect: false },
+      { reponseChoix: "La responsabilité  disciplinaire du directeur de tir et de l'officier de tir", isCorrect: true },
+    ],
+  },{
+    questionText:
+      "Sur quelle support note t-on un officier",
+    questionOptions: [
+      { reponseChoix: "BNIO", isCorrect: false },
+      { reponseChoix: "FNIO", isCorrect: false },
+      { reponseChoix: "BNA", isCorrect: true },
+      { reponseChoix: "BNO", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Quelle est la particularité de la legitime defense d'un bien ?",
+    questionOptions: [
+      { reponseChoix: "Cela depend de la valeur du bien", isCorrect: false },
+      { reponseChoix: "Elle exclue l'emploi de la force non letal", isCorrect: false },
+      { reponseChoix: "Un bien ne peut beneficier de la legitime defense", isCorrect: false },
+      { reponseChoix: "Elle exclue totalement l'homicide volontaire", isCorrect: true },
+    ],
+  },{
+    questionText:
+      "Pourquoi utilise-t-on une lampe rouge sur un champ de tir",
+    questionOptions: [
+      { reponseChoix: "Pour ne pas de faire remarquer", isCorrect: false },
+      { reponseChoix: "Pour une intervention sur une arme de nuit", isCorrect: true },
+      { reponseChoix: "Pour etre plus discret à l'exterieur", isCorrect: false },
+      { reponseChoix: "Pour controler la perception du champs de tir", isCorrect: false },
+    ],
+  },{
+    questionText:
+      "Parmis les équipement suivant lequel n'appartient pas au cyberespace ?",
+    questionOptions: [
+      { reponseChoix: "Montre connectée", isCorrect: false },
+      { reponseChoix: "Frigo connectéé", isCorrect: false },
+      { reponseChoix: "Voiture autonome", isCorrect: false },
+      { reponseChoix: "Poste radio analogique", isCorrect: true },
     ],
   },
 ];

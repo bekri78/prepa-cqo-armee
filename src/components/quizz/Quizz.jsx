@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import questions from "../../data";
+import { UserContext } from "../context/userContext";
 import QuizzResult from "../quizzResult/QuizzResult";
 import TransitionsModal from "../modal/modal";
 import Container from "react-bootstrap/Container";
@@ -14,20 +15,22 @@ import InsightsIcon from '@mui/icons-material/Insights';
 import "./Quizz.css";
 
 export default function Quizz() {
+  const {currentUser} = useContext(UserContext)
   const [currentQuestion, setCurrentQuestions] = useState(0);
   const [score, setScore] = useState(0);
-  const [correctAnswer, setCorrectAnswer] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [randomQuestion, setRandomQuestion] = useState([]);
   const [openModal, setOpenModal] = useState(false);
-
+  
   useEffect(() => {
+    
     if (questions !== null) {
       getRandomItemsFromArray(questions);
+       
     }
   }, [showResult]);
-
+  
   useEffect(()=> {
     const tbl =JSON.parse(window.localStorage.getItem('randomQuestionCQO'))
     if(tbl !== null) {
@@ -35,11 +38,11 @@ export default function Quizz() {
      setRandomQuestion(tbl)
     }
 
-  },[])
+  },[ showResult])
 
   const getRandomItemsFromArray = (arr) => {
     let randomIndices = [];
-    while (randomIndices.length < 38) {
+    while (randomIndices.length < 40) {
       let index = Math.floor(Math.random() * arr.length);
       if (!randomIndices.includes(index)) {
         randomIndices.push(index);
@@ -52,13 +55,13 @@ export default function Quizz() {
       nouveauTableau.push(arr[index]);
     });
     
-    return window.localStorage.setItem('randomQuestionCQO', JSON.stringify(nouveauTableau));
+    
+    return window.localStorage.setItem('randomQuestionCQO', JSON.stringify(nouveauTableau))
   };
 
   const handleAnswerOptions = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);
-      setCorrectAnswer(correctAnswer + 1);
     }
     setClicked(true);
   };
@@ -75,10 +78,10 @@ export default function Quizz() {
   const handlePlayAgain = () => {
     setCurrentQuestions(0);
     setScore(0);
-    setCorrectAnswer(0);
     setShowResult(false);
+    window.localStorage.setItem('randomQuestionCQO', JSON.stringify([]))
+   
   };
-
   return (
     <>
       <div className="container-quizz">
@@ -86,7 +89,6 @@ export default function Quizz() {
           {showResult ? (
             <QuizzResult
               score={score}
-              correctAnswer={correctAnswer}
               handlePlayAgain={handlePlayAgain}
             />
           ) : (
@@ -111,14 +113,14 @@ export default function Quizz() {
                     <Col xs={12} sm={12} md={6} lg={6}>
                       <div className="answer-section">
                         {randomQuestion[currentQuestion].questionOptions?.map(
-                          (ans, i) => {
+                          (ans, index) => {
                             return (
                               <Button
                                 className={`buttons ${
                                   clicked && ans.isCorrect ? "correct" : "rien"
                                 }`}
                                 disabled={clicked}
-                                key={i}
+                                key={index}
                                 onClick={() =>
                                   handleAnswerOptions(ans.isCorrect)
                                 }
@@ -161,11 +163,13 @@ export default function Quizz() {
             </>
           )}
         </div>
-          <div className="signature"><div className="container-signature"> <p style={{margin:'unset',  marginRight:3}}>Developed by </p><a style={{textDecoration:'none'}} href="https://www.linkedin.com/in/mehdi-bekri/" target="_blank"> Mister_B_For_You</a></div> </div>
+         
         <div className="questions">
-           <Link style={{ textDecoration: "none" }} to={"/stat"}>
+        {currentUser && (
+          <Link style={{ textDecoration: "none" }} to={"/private/private-state"}>
             <InsightsIcon  style={{ marginRight: 10, marginTop: 10,fontSize: '2em' }} />
           </Link>
+             )}
           <ContactSupportIcon
             onClick={() => setOpenModal(!openModal)}
             style={{ marginRight: 10, marginTop: 10,fontSize: '2em' }}

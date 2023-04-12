@@ -1,0 +1,13 @@
+.container-img-state {
+  position: absolute;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: auto;
+}
+
+/* * {
+  background-image: url("../../../utils//img/wave-haikei.svg");
+  background-repeat: no-repeat;
+} */

@@ -33,7 +33,7 @@ export default function Email() {
   const succesMessage = () => {
     Toast.fire({
       icon: "success",
-      title: "Envoyer avec succès !",
+      title: "Envoyé avec succès !",
     });
   };
 
@@ -170,6 +170,7 @@ export default function Email() {
         <Chip  style={{cursor:"pointer",display: 'flex',alignItems: 'center',flexDirection: 'column',justifyContent: 'center',height: 'auto', width:'100%'}} icon={<HomeIcon style={{fontSize: '2em'}} />} label="Accueil" />{" "}
       </Link>
       </div>
+        <div className="signature"><div className="container-signature"> <p style={{margin:'unset',  marginRight:3}}>Developed by </p><a style={{textDecoration:'none'}} href="https://www.linkedin.com/in/mehdi-bekri/" target="_blank"  rel="noreferrer"> Mister_B_For_You</a></div> </div> 
     </div>
   );
 }

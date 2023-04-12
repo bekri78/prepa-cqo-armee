@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext } from "react";
+import { UserContext } from "../context/userContext";
 import { Link } from "react-router-dom";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -7,25 +9,25 @@ import Button from "@mui/material/Button";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import "./Home.css";
 
+
 export default function Home() {
 
-  const [registerEmail,setRegisterEmail]= useState("")
-  const register = async () => {};
-  const login = async () => {};
-  const logout = async () => {};
+const {currentUser} = useContext(UserContext)
 
   useEffect(() => {
     AOS.init();
   }, []);
   return (
+    <>
     <div className="landingpage">
+  
       <div className="container-home">
         <h1
           data-aos="fade-zoom-in"
           data-aos-duration="1500"
           className="title-home"
         >
-          Préparation C.Q.O<br></br>Promotion OSC 2023A
+          Préparation C.Q.O<br></br>Ecole de l'air et   de l'espace
         </h1>
         <div data-aos="fade-up" data-aos-duration="1500" className="home-btn">
           <Link style={{ textDecoration: "none" }} to={"./quizz"}>
@@ -43,5 +45,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
