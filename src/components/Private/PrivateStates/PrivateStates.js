@@ -118,7 +118,7 @@ export default function PrivateStates() {
         </Container>
       ):(
         <div style={{ display:'flex', justifyContent:'center',alignItems:'center', flexDirection:'column'}}>
-        <div style={{width:'40%', margin:'auto'}} ref={container} />
+        <div style={{width:'60%', margin:'auto'}} ref={container} />
         <h5>Commencez un quizz pour afficher vos premieres statistiques !</h5>
         
         </div>

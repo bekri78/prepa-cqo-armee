@@ -32,7 +32,7 @@ export default function SimpleAccordion() {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Le questionnaire  est basé sur 38 questions, elles sont piochées aléatoirement dans une large bande de données. La note finale est convertie sur 20 et vous indiquera si vous avez suffisament 
+            Le questionnaire  est basé sur 40 questions, piochées aléatoirement dans une large bande de données. La note finale est convertie sur 20 et vous indiquera si vous avez suffisament 
             de connaissances pour la reussite du C.Q.O, la moyenne étant fixé à 12/20.
           </Typography>
         </AccordionDetails>

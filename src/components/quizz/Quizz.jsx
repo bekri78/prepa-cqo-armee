@@ -27,7 +27,7 @@ export default function Quizz() {
     
     if (questions !== null) {
       getRandomItemsFromArray(questions);
-       
+      
     }
   }, [showResult]);
   
@@ -35,7 +35,8 @@ export default function Quizz() {
     const tbl =JSON.parse(window.localStorage.getItem('randomQuestionCQO'))
     if(tbl !== null) {
       
-     setRandomQuestion(tbl)
+      setRandomQuestion(tbl)
+    
     }
 
   },[ showResult])
@@ -82,6 +83,7 @@ export default function Quizz() {
     window.localStorage.setItem('randomQuestionCQO', JSON.stringify([]))
    
   };
+  console.log( randomQuestion)
   return (
     <>
       <div className="container-quizz">

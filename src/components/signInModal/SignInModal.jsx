@@ -2,15 +2,17 @@ import React, { useContext, useRef, useState } from "react";
 import { UserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
 import { Backdrop, Box, Modal, Fade, Typography, Button } from "@mui/material";
-
+import LinearBuffer from "../linearProgress/LinearProgress";
 
 export default function SignInModal() {
   const { modalState, toggleModals, signIn, signInWithGoolge } =
     useContext(UserContext);
   const [validation, setValidation] = useState("");
   const formRef = useRef();
-  const inputs = useRef([]);
+  const inputPassw = useRef();
+  const inputEmail = useRef();
   const navigate = useNavigate();
+  const [displayLoader, setDisplayLoader] = useState(false);
   const style = {
     position: "absolute",
     top: "50%",
@@ -19,9 +21,6 @@ export default function SignInModal() {
     width: "30%",
     border: "2px solid #000",
     boxShadow: 24,
-    background:
-      "linear-gradient(135deg,rgba(255, 255, 255, 255),rgba(255, 255, 255, 255))",
-    backdropFilter: "blur(10px)",
     p: 4,
     display: "flex",
     justifyContent: "center",
@@ -29,25 +28,24 @@ export default function SignInModal() {
     flexDirection: "column",
   };
 
-  const addInputs = (el) => {
-    if (el && !inputs.current.includes(el)) {
-      inputs.current.push(el);
-    }
-  };
-
-  
 
   const handleForm = async (e) => {
+    setDisplayLoader(true);
     e.preventDefault();
+    console.log( inputEmail.current.value, inputPassw.current.value)
 
     try {
-      await signIn(inputs.current[0].value, inputs.current[1].value);
-      await formRef.current.reset();
-      await toggleModals("close");
-       setValidation("");
-       navigate("/private/private-state");
+      await signIn(inputEmail.current.value, inputPassw.current.value);
+      navigate("/private/private-state");
+      toggleModals("close");
+      inputEmail.current.reset()
+      inputPassw.current.reset()
+      setValidation("");
+      
+       setDisplayLoader(false)
     } catch (err) {
       setValidation("Oup , email ou mot de passe incorrect");
+       setDisplayLoader(false)
     }
   };
 
@@ -75,61 +73,71 @@ export default function SignInModal() {
           >
             <Fade in={modalState.signInModal}>
               <Box sx={style} className="modale-signUp">
-                <div className="container-metric">
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    style={{ textAlign: "center" }}
-                    color="textPrimary"
-                  >
-                    Connexion
+                {displayLoader ? (
+                  <div style={{ width:"100%", height:100, display:"flex", justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+                  <LinearBuffer />
+                  <Typography sx={{ fontSize: 14 , color:'white', marginTop:4 }} color="text.secondary" >
+                   Connexion en cours ...
                   </Typography>
-                </div>
-                <form
-                  ref={formRef}
-                  onSubmit={handleForm}
-                  className="sign-up-form"
-                >
-                  <div className="mb-3">
-                    <label htmlFor="signInEmail" className="form-label">
-                      Email
-                    </label>
-                    <input
-                      ref={addInputs}
-                      name="email"
-                      required
-                      type="email"
-                      className="form-control"
-                      id="signInEmail"
-                    />
-                    <p className="text-danger mt-1">{validation}</p>
                   </div>
-
-                  <div className="mb-3">
-                    <label htmlFor="signInPwd" className="form-label">
-                      Mot de passe
-                    </label>
-                    <input
-                      ref={addInputs}
-                      name="pwd"
-                      required
-                      type="password"
-                      className="form-control"
-                      id="signInPwd"
-                    />
-                  </div>
-                  <div className="mb-3 w-100 d-flex justify-content-center align-items-center flex-column">
-                    <Button
-                      variant="contained"
-                      size="small"
-                      style={{ width: "50%", height: 40 }}
-                      type="submite"
+                ) : (
+                  <>
+                    <div className="container-metric">
+                      <Typography
+                        gutterBottom
+                        variant="h5"
+                        style={{ textAlign: "center" }}
+                        color="textPrimary"
+                      >
+                        Connexion
+                      </Typography>
+                    </div>
+                    <form
+                      ref={formRef}
+                      onSubmit={handleForm}
+                      className="sign-up-form"
                     >
-                      Se connecter
-                    </Button>
-                    
-                  </div>
-                </form>
+                      <div className="mb-3">
+                        <label htmlFor="signInEmail" className="form-label">
+                          Email
+                        </label>
+                        <input
+                          ref={inputEmail}
+                          name="email"
+                          required
+                          type="email"
+                          className="form-control"
+                          id="signInEmail"
+                        />
+                        <p className="text-danger mt-1">{validation}</p>
+                      </div>
+
+                      <div className="mb-3">
+                        <label htmlFor="signInPwd" className="form-label">
+                          Mot de passe
+                        </label>
+                        <input
+                          ref={inputPassw}
+                          name="pwd"
+                          required
+                          type="password"
+                          className="form-control"
+                          id="signInPwd"
+                        />
+                      </div>
+                      <div className="mb-3 w-100 d-flex justify-content-center align-items-center flex-column">
+                        <Button
+                          variant="contained"
+                          size="small"
+                          style={{ width: "100%", height: 40 }}
+                          type="submite"
+                        >
+                          Se connecter
+                        </Button>
+                      </div>
+                    </form>
+                  </>
+                )}
               </Box>
             </Fade>
           </Modal>

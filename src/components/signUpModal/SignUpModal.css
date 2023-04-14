@@ -19,6 +19,17 @@ label {
   width: 50%;
 }
 
+.form-label {
+  color: white;
+}
+
+.modale-signUp {
+  background-image: url("../../utils/img/wave\ \(2\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+}
 @media screen and (max-width: 500px) {
   .modale-signUp {
     width: 90% !important;

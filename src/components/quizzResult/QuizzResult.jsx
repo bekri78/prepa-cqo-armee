@@ -98,7 +98,7 @@ export default function QuizzResult(props) {
   }, [currentUser, moyenneSur20, idUserFirebase, props.score]);
 
   const convertScore = (score) => {
-    let moyenne = Math.round((score / 40) * 20);
+    let moyenne = Math.round(score / 2);
     let reussite = moyenne >= 12 ? true : false;
     reussite === true ? victoire() : fail();
     return setReussite(reussite), setMoyenneSur20(moyenne);
