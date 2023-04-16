@@ -216,7 +216,7 @@ const questions = [
         isCorrect: false,
       },
       {
-        reponseChoix: "Le commandement des forces aériennes",
+        reponseChoix: "Le commandement des forces terrestres",
         isCorrect: false,
       },
       {
@@ -676,7 +676,7 @@ const questions = [
     questionOptions: [
       {
         reponseChoix:
-          "Mercator classique / Universal Transversal Mercator / Lambert",
+          "Mercator classique / Universal Transversalle Mercator / Lambert",
         isCorrect: false,
       },
       {
@@ -877,7 +877,7 @@ const questions = [
     ],
   },
   {
-    questionText: "La définition: Être militaire ? ",
+    questionText: "Quelle phrase est incorrecte dans la définition: Être militaire ? ",
     questionOptions: [
       {
         reponseChoix:
@@ -1578,9 +1578,9 @@ const questions = [
     questionText:
       "Qui a dit « L’aviation c’est du sport, pour l’armée c’est zéro » ?",
     questionOptions: [
-      { reponseChoix: "Général Foch", isCorrect: false },
+      { reponseChoix: "Général Foch", isCorrect: true },
       { reponseChoix: "Général Montgomery", isCorrect: false },
-      { reponseChoix: "Général Roques", isCorrect: true },
+      { reponseChoix: "Général Roques", isCorrect: false },
       { reponseChoix: "Général Enarquès", isCorrect: false },
     ],
   },
@@ -1719,7 +1719,7 @@ const questions = [
   },
   {
     questionText:
-      "Quelle est la limite de durée des services (LDS) pour les officiers sous contrat ?",
+      "Quelle est la limite de durée des services (LDS) pour les sous-officiers sous contrat ?",
     questionOptions: [
       { reponseChoix: "29 ans", isCorrect: false },
       { reponseChoix: "30 ans", isCorrect: false },
@@ -1824,12 +1824,12 @@ const questions = [
       },
       {
         reponseChoix: "La responsabilté penale de son auteur",
-        isCorrect: false,
+        isCorrect: true,
       },
       {
         reponseChoix:
           "La responsabilité  disciplinaire du directeur de tir et de l'officier de tir",
-        isCorrect: true,
+        isCorrect: false,
       },
     ],
   },
@@ -1963,7 +1963,7 @@ const questions = [
       { reponseChoix: "PESD", isCorrect: true },
       { reponseChoix: "PSDC", isCorrect: false },
       { reponseChoix: "CED", isCorrect: false },
-      { reponseChoix: "CECA", isCorrect: true },
+      { reponseChoix: "CECA", isCorrect: false },
     ],
   },
   {
@@ -2030,7 +2030,7 @@ const questions = [
       {
         reponseChoix:
           "Le departement de l'information et de la communication des armées",
-        isCorrect: true,
+        isCorrect: false,
       },
       { reponseChoix: "Le service d'information du gouvernement", isCorrect: false },
     ],

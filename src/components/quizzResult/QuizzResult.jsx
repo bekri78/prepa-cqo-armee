@@ -62,7 +62,7 @@ export default function QuizzResult(props) {
       moyenne: moyenneSur20,
       
     };
-    const wrongAnswer =(5 - scoreUser)
+    const wrongAnswer =(scoreUser - 40)
     // Décomposer le tableau existant dans Firestore avec l'opérateur de propagation
     const existingNotes = [...(await getDoc(userDoc)).data().note];
     const existingDate = [...(await getDoc(userDoc)).data().date];
@@ -98,7 +98,7 @@ export default function QuizzResult(props) {
   }, [currentUser, moyenneSur20, idUserFirebase, props.score]);
 
   const convertScore = (score) => {
-    let moyenne = Math.round(score / 2);
+    let moyenne = (score / 2);
     let reussite = moyenne >= 12 ? true : false;
     reussite === true ? victoire() : fail();
     return setReussite(reussite), setMoyenneSur20(moyenne);
@@ -149,7 +149,7 @@ export default function QuizzResult(props) {
 
         <Divider color="#fffff" sx={{ height: "1px" }} variant="middle" />
         <Typography variant="h6" style={{ color: "white " }}>
-          Nombres de réponses correctes {props.score} sur 38
+          Nombres de réponses correctes {props.score} sur 40
         </Typography>
 
         <div className="container-btn-exit">

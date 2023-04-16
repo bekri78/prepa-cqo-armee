@@ -83,7 +83,7 @@ export default function Quizz() {
     window.localStorage.setItem('randomQuestionCQO', JSON.stringify([]))
    
   };
-  console.log( randomQuestion)
+  
   return (
     <>
       <div className="container-quizz">

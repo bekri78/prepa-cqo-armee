@@ -38,7 +38,7 @@ export default function BarChart(props) {
         backgroundColor: "#222e3c",
         '@media (max-width: 500px)': {
           width: '100%',
-          height: "200px",
+          height: "240px",
         },
         
       }}

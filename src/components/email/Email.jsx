@@ -38,7 +38,7 @@ export default function Email() {
   };
 
   const handeSubmit = (e) => {
-    console.log(name, prenom, email, value);
+    
     e.preventDefault();
     if (name && email && prenom && value) {
       sendEmail({
@@ -51,7 +51,7 @@ export default function Email() {
   };
 
   const sendEmail = (variable) => {
-    console.log(variable);
+   
     emailjs
       .send(
         "service_tc5kj2k",
@@ -60,8 +60,8 @@ export default function Email() {
         "user_CeUZSbU8Tow2n0Uj8WHhH"
       )
       .then(
-        (result) => {
-          console.log(result.status);
+        () => {
+          
           succesMessage();
           setName("");
           setEmail("");

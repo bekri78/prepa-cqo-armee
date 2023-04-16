@@ -58,7 +58,7 @@ export function UserContextProvider(props) {
       setCurrentUser(currentUser);
       setLoadingData(false);
       setIdUserFirebase(null)
-      console.log("unsubscribe",currentUser)
+      
     });
     return unsubscribe;
   }, [currentUser]);
