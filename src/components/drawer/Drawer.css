@@ -1,0 +1,30 @@
+.img-google {
+  height: 50px;
+  width: 50px;
+  border-radius: 10%;
+}
+
+.container-img-name {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
+
+.title-name-google {
+  color: black;
+  margin-left: 1%;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .listItemBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,19 +1,8 @@
-body {
-  background-color: #7cc6fe;
-  width: 100vw;
-  height: 100vh;
+* {
+  margin: 0;
 }
 
-.App {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+body {
   height: 100vh;
-  color: white;
-  background-image: url("./utils/img/rafale1920.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  width: 100%;
 }

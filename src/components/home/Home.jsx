@@ -1,29 +1,50 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
+import { UserContext } from "../context/userContext";
 import { Link } from "react-router-dom";
-import "./Home.css";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Button from "@mui/material/Button";
-import BgVideo from '../../utils/video/AVIATEUR2.mp4'
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import "./Home.css";
+
 
 export default function Home() {
+
+const {currentUser} = useContext(UserContext)
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
-      <div className="landingpage">
-        <video src={BgVideo} autoPlay muted loop className="video-bg" />
-      <div className="bg-overlay"></div>
-      <div className="home-btn">
-         <Link style ={{textDecoration: 'none'}} to={"./quizz"}>
-         <Button className="btn-home-mui" variant="outlined"sx={{ width: 300, padding: 2, margin: 2 }}size="large" endIcon={<KeyboardArrowRightIcon />}>
-         Commencer
-        </Button>
+    <div className="landingpage">
+  
+      <div className="container-home">
+        <h1
+          data-aos="fade-zoom-in"
+          data-aos-duration="1500"
+          className="title-home"
+        >
+          Préparation C.Q.O<br></br>Ecole de l'air et   de l'espace
+        </h1>
+        <div data-aos="fade-up" data-aos-duration="1500" className="home-btn">
+          <Link style={{ textDecoration: "none" }} to={"./quizz"}>
+            <Button
+              className="btn-home-mui"
+              variant="contained"
+              color="secondary"
+              // sx={{ width: 200, padding: 0.5, margin: 0.5,border :"1px solid white !important",borderRadius:"0 !important" }}
+              size="large"
+              endIcon={<KeyboardArrowRightIcon />}
+            >
+              Commencer
+            </Button>
           </Link>
         </div>
-      <div className="home-text">
-        <p className="textpromo">Preparation CQO 2023 promotion OSC23 A</p>
       </div>
-      </div>
-
-      
+    </div>
     </>
   );
 }

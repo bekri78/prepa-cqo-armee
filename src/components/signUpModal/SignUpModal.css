@@ -1,0 +1,42 @@
+label {
+  color: black;
+}
+
+.sign-up-form {
+  width: 100%;
+  padding: 0 10% 0 10%;
+}
+
+.container-metric {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+.container-metric > img {
+  width: 50%;
+}
+
+.form-label {
+  color: white;
+}
+
+.modale-signUp {
+  background-image: url("../../utils/img/wave\ \(2\).svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: white;
+  background-position: center;
+}
+@media screen and (max-width: 500px) {
+  .modale-signUp {
+    width: 90% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .modale-signUp {
+    width: 90% !important;
+  }
+}

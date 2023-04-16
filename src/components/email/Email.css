@@ -1,0 +1,33 @@
+.container-form {
+  background-image: url("../../utils/img/call.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-form {
+  background: linear-gradient(
+    165deg,
+    rgba(255, 255, 255, 0.897),
+    rgba(255, 255, 255, 0.733)
+  ) !important;
+  backdrop-filter: blur(1px) !important;
+  -webkit-backdrop-filter: blur(1px) !important;
+}
+
+.home-form {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.MuiChip-icon {
+  margin-right: inherit !important;
+  margin-left: inherit !important;
+}
