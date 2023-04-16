@@ -34,7 +34,7 @@ export default function PrivateStates() {
   }, []);
 
   useEffect(() => {
-    console.log(idUserFirebase);
+   
     if (idUserFirebase) {
       getDataUserFirestore();
     }
@@ -44,7 +44,7 @@ export default function PrivateStates() {
     const userDoc = doc(db, "users", id);
     const userData = (await getDoc(userDoc)).data();
     const existingNotes = userData;
-    console.log("recuprdata", existingNotes);
+   
     setData(existingNotes);
   };
 

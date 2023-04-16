@@ -32,7 +32,7 @@ export default function SignInModal() {
   const handleForm = async (e) => {
     setDisplayLoader(true);
     e.preventDefault();
-    console.log( inputEmail.current.value, inputPassw.current.value)
+   
 
     try {
       await signIn(inputEmail.current.value, inputPassw.current.value);

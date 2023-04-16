@@ -13,7 +13,7 @@ ChartJS.register(LineElement, CategoryScale, LinearScale, PointElement);
 
 export default function LineChart(props) {
   
-console.log('line', props.date)
+
   const labels =props.date
   const data = {
     labels: labels,
@@ -85,7 +85,7 @@ console.log('line', props.date)
         marginBottom:'5%',
         '@media (max-width: 500px)': {
           width: '100%',
-          height: "400px",
+          height: "240px",
          
         },
       }}
