@@ -252,9 +252,8 @@ const questions = [
     ],
   },
   {
-    questionText: 
-      "A quoi correspond deux barres jaunes sur le grade ?",
-      questionOptions: [
+    questionText: "A quoi correspond deux barres jaunes sur le grade ?",
+    questionOptions: [
       { reponseChoix: "Capitaine", isCorrect: false },
       { reponseChoix: "Sergent-Chef", isCorrect: false },
       { reponseChoix: "Lieutenant", isCorrect: true },
@@ -877,7 +876,8 @@ const questions = [
     ],
   },
   {
-    questionText: "Quelle phrase est incorrecte dans la définition: Être militaire ? ",
+    questionText:
+      "Quelle phrase est incorrecte dans la définition: Être militaire ? ",
     questionOptions: [
       {
         reponseChoix:
@@ -1893,7 +1893,9 @@ const questions = [
     questionText: "Qui est chargé de rédaction du dossier d'auto protection ?",
     questionOptions: [
       {
-        reponseChoix: "Le chef du pole sécurité protection (CPSP)", isCorrect: false,},
+        reponseChoix: "Le chef du pole sécurité protection (CPSP)",
+        isCorrect: false,
+      },
       { reponseChoix: "Le commandant d'unité", isCorrect: true },
       { reponseChoix: "L'officier de securité base", isCorrect: false },
       { reponseChoix: "Le commandant de l'EP", isCorrect: false },
@@ -2020,29 +2022,42 @@ const questions = [
     ],
   },
   {
-    questionText: "Quelle est l'organise qui coordone les actions de la communication institutionnelle du ministère des armées ?",
+    questionText:
+      "Quelle est l'organise qui coordone les actions de la communication institutionnelle du ministère des armées ?",
     questionOptions: [
       {
-        reponseChoix: "La cellul COM du secrétariat général pour l'administration",
+        reponseChoix:
+          "La cellul COM du secrétariat général pour l'administration",
         isCorrect: false,
       },
-      { reponseChoix: "La service de communication de l'Etat-major des armées", isCorrect: true },
+      {
+        reponseChoix: "La service de communication de l'Etat-major des armées",
+        isCorrect: true,
+      },
       {
         reponseChoix:
           "Le departement de l'information et de la communication des armées",
         isCorrect: false,
       },
-      { reponseChoix: "Le service d'information du gouvernement", isCorrect: false },
+      {
+        reponseChoix: "Le service d'information du gouvernement",
+        isCorrect: false,
+      },
     ],
   },
   {
-    questionText: "Quelle est la principale cause de compromission des réseaux informatique?",
+    questionText:
+      "Quelle est la principale cause de compromission des réseaux informatique?",
     questionOptions: [
       {
-        reponseChoix: "La compétence des attaquants qui ne cesse de s'améliorer",
+        reponseChoix:
+          "La compétence des attaquants qui ne cesse de s'améliorer",
         isCorrect: false,
       },
-      { reponseChoix: "Le manque de moyens des équipes de sécurité", isCorrect: false },
+      {
+        reponseChoix: "Le manque de moyens des équipes de sécurité",
+        isCorrect: false,
+      },
       {
         reponseChoix:
           "Le manque de respect des règles de securité informatiques par les utilisateurs",
@@ -2052,33 +2067,364 @@ const questions = [
     ],
   },
   {
-    questionText: "Donnez les sommations réglementaires en vigueur pour la protection d'une ZDHS?",
+    questionText:
+      "Donnez les sommations réglementaires en vigueur pour la protection d'une ZDHS?",
     questionOptions: [
       {
-        reponseChoix: "Halte ! - Halte ou je fais feu ! - Halte ou je fais feu !",
-        isCorrect: false,
-      },
-      { reponseChoix: "Halte ! - Halte deuxième sommation ! - Halte au chien", isCorrect: false },
-      {
         reponseChoix:
-          "Halte ! - Halte ou je fais feu",
+          "Halte ! - Halte ou je fais feu ! - Halte ou je fais feu !",
         isCorrect: false,
       },
-      { reponseChoix: "Halte! - Dernière sommation, Halte ! Ou je fais feu !", isCorrect: true },
+      {
+        reponseChoix: "Halte ! - Halte deuxième sommation ! - Halte au chien",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Halte ! - Halte ou je fais feu",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Halte! - Dernière sommation, Halte ! Ou je fais feu !",
+        isCorrect: true,
+      },
     ],
   },
   {
-    questionText: "Qu'est ce qui explique la moindre utilisation de l'aviation de bombardement à partir de fin 1915",
+    questionText:
+      "Qu'est ce qui explique la moindre utilisation de l'aviation de bombardement à partir de fin 1915",
     questionOptions: [
       {
         reponseChoix: "L'apparition du radar",
         isCorrect: false,
       },
-      { reponseChoix: "Le traité de Non-Prolifération qui limite l'usage d'un tel armement", isCorrect: false },
-      { reponseChoix: "Le manque de munition", isCorrect: true },
       {
         reponseChoix:
-          "L'efficacité croissante de la chasse grace au tir axial",
+          "Le traité de Non-Prolifération qui limite l'usage d'un tel armement",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le manque de munition", isCorrect: true },
+      {
+        reponseChoix: "L'efficacité croissante de la chasse grace au tir axial",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Quelle sont les 5 fonctions stratégiques introduites en 2008 et renforcées par le livre Blanc 2013",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Meconnaissance/Anticipation,Dissuasion,Protection,Intervention",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Connaissance/Anticipation,Dissuasion,Protection,Intervention",
+        isCorrect: true,
+      },
+      {
+        reponseChoix:
+          "Connaissance/Participation,Dissuasion,Projection,Intervention",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Connexion/Acculer,Denombrer,Projection,Intermitant",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année la France a-t-elle réintégrée le commandement de l'OTAN ?",
+    questionOptions: [
+      {
+        reponseChoix: "1950",
+        isCorrect: false,
+      },
+      { reponseChoix: "2002", isCorrect: false },
+      {
+        reponseChoix: "2010",
+        isCorrect: false,
+      },
+      { reponseChoix: "2009", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "De combien d'hommes compte l'ensemble des déploiements des 3 armées ?",
+    questionOptions: [
+      { reponseChoix: "30 000 hommes et femmes", isCorrect: true },
+      {
+        reponseChoix: "20 000 hommes et femmes",
+        isCorrect: false,
+      },
+      { reponseChoix: "1 000 000 hommes et femmes", isCorrect: false },
+      {
+        reponseChoix: "25 000 hommes et femmes",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Quelles sont les 5 membres permamnent du CSNU ?",
+    questionOptions: [
+      {
+        reponseChoix: "Chine,Inde,France,Etats-Unis,Russie",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Chine,Royaume-Uni,France,Etats-Unis,Russie",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Chine,Pologne,Ukraine,Etats-Unis-Russie",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Mongolie,Kirghizistan,Congo,Malawi,Espagne",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Lequel de ces objectifs ne fait PAS partie des missions du PSDC ?",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Les missions de conseil et d’assistance en matière militaire",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les missions humanitaires et d’évacuation",
+        isCorrect: false,
+      },
+      { reponseChoix: "Legitime défense préventive", isCorrect: true },
+      {
+        reponseChoix: "Les actions conjointes en matière de désarmement",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Opération lancée en Aout 2014, résultat de la fusion netre les opérations Serval et Epervier, en partenariat avec les principaux pays de BSS dans le but de lutter contre les GAT dans la bande sahélo-saharienne",
+    questionOptions: [
+      { reponseChoix: "Barkhane", isCorrect: true },
+      {
+        reponseChoix: "Shikra",
+        isCorrect: false,
+      },
+      { reponseChoix: "Chammal", isCorrect: false },
+      {
+        reponseChoix: "Sangaris",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Selon l'article L.1111.1, du Code de la Defense, quel est l'objet de la politique de defense ?",
+    questionOptions: [
+      {
+        reponseChoix: "Faire la guerre ",
+        isCorrect: false,
+      },
+      { reponseChoix: "Agresser", isCorrect: false },
+      {
+        reponseChoix: "Engager",
+        isCorrect: false,
+      },
+      { reponseChoix: "Assurer", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Qui est responsable de la préparation et la mise en oeuvre de la politique de défense ?",
+    questionOptions: [
+      {
+        reponseChoix: "Le président",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le premier Ministre", isCorrect: false },
+      { reponseChoix: "Le Ministère", isCorrect: true },
+      {
+        reponseChoix: "Le Ministre de la guerre",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Lequel de ces Etats ne fait pas partie de l’OTAN ?",
+    questionOptions: [
+      {
+        reponseChoix: "L'Allemagne",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le Canada", isCorrect: false },
+      {
+        reponseChoix: "La Hongrie",
+        isCorrect: false,
+      },
+      { reponseChoix: "L'Ukraine", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Quel est l’actuel Commandant suprême de la Transformation Alliée ?",
+    questionOptions: [
+      {
+        reponseChoix: "L'amiral Edmund Giambastiani",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le général James Mattis", isCorrect: false },
+      { reponseChoix: "Le Général André Lanata", isCorrect: true },
+      {
+        reponseChoix: "Le général d'armée aérienne Jean-Paul Paloméros ",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Que signifie OOAD - Travail Préparatoire avant une frappe ?",
+    questionOptions: [
+      {
+        reponseChoix: "Obstruration, Désorientation, Action, Décision",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Observation, Orientation, Action, Décision",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Observation, Orientation, Actionnement, Désilusion",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Obsolescence, Orientation, Action, Décision ",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année a été créé la Communauté Européenne de Défense ?",
+    questionOptions: [
+      {
+        reponseChoix: "2018",
+        isCorrect: false,
+      },
+      { reponseChoix: "2002", isCorrect: false },
+      {
+        reponseChoix: "1960",
+        isCorrect: false,
+      },
+      { reponseChoix: "1952", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Combien représente la dépense française pour l’achat et l’entretien de son arsenal nucléaire ?",
+    questionOptions: [
+      {
+        reponseChoix: "Environ 1/3 dépense d’équipement des armées",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Environ 1/2 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Environ 1/5 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Environ 4/5 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+    ],
+  }, {
+    questionText:
+      "Qui est responsable de la défense nationale au titre de l’article 21 de la Constitution du 4 Octobre 1958 ?",
+    questionOptions: [
+      {
+        reponseChoix: "Le Ministre de la culture",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le President",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le Premier Ministre",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Le Ministre de l'air",
+        isCorrect: false,
+      },
+    ],
+  }, {
+    questionText:
+      "En quelle année a été créé Vigipirate ?",
+    questionOptions: [
+      {
+        reponseChoix: "2000",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1980",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "2002",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1978",
+        isCorrect: true,
+      },
+    ],
+  },{
+    questionText:
+      "Combien l’OTAN compte-elle de membres à l’heure actuelle ?",
+    questionOptions: [
+      {
+        reponseChoix: "30",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "41",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "40",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "31",
+        isCorrect: true,
+      },
+    ],
+  },{
+    questionText:
+      "En quelle année a eu lieu le push en Algerie",
+    questionOptions: [
+      {
+        reponseChoix: "En 1961",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "En 1970",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "En 1960",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "En 1978",
         isCorrect: false,
       },
     ],
