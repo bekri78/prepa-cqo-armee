@@ -252,9 +252,8 @@ const questions = [
     ],
   },
   {
-    questionText: 
-      "A quoi correspond deux barres jaunes sur le grade ?",
-      questionOptions: [
+    questionText: "A quoi correspond deux barres jaunes sur le grade ?",
+    questionOptions: [
       { reponseChoix: "Capitaine", isCorrect: false },
       { reponseChoix: "Sergent-Chef", isCorrect: false },
       { reponseChoix: "Lieutenant", isCorrect: true },
@@ -877,7 +876,8 @@ const questions = [
     ],
   },
   {
-    questionText: "Quelle phrase est incorrecte dans la définition: Être militaire ? ",
+    questionText:
+      "Quelle phrase est incorrecte dans la définition: Être militaire ? ",
     questionOptions: [
       {
         reponseChoix:
@@ -1836,9 +1836,9 @@ const questions = [
   {
     questionText: "Sur quelle support note t-on un officier",
     questionOptions: [
-      { reponseChoix: "BNIO", isCorrect: false },
+      { reponseChoix: "BNIO", isCorrect: true },
       { reponseChoix: "FNIO", isCorrect: false },
-      { reponseChoix: "BNA", isCorrect: true },
+      { reponseChoix: "BNA", isCorrect: false },
       { reponseChoix: "BNO", isCorrect: false },
     ],
   },
@@ -1893,7 +1893,9 @@ const questions = [
     questionText: "Qui est chargé de rédaction du dossier d'auto protection ?",
     questionOptions: [
       {
-        reponseChoix: "Le chef du pole sécurité protection (CPSP)", isCorrect: false,},
+        reponseChoix: "Le chef du pole sécurité protection (CPSP)",
+        isCorrect: false,
+      },
       { reponseChoix: "Le commandant d'unité", isCorrect: true },
       { reponseChoix: "L'officier de securité base", isCorrect: false },
       { reponseChoix: "Le commandant de l'EP", isCorrect: false },
@@ -1935,25 +1937,6 @@ const questions = [
         isCorrect: false,
       },
       { reponseChoix: "Regime de zone militaire et protégé", isCorrect: true },
-    ],
-  },
-  {
-    questionText:
-      "Citez les 2 régimes juridique qui peuvent etre soumis aux installations militaires ?",
-    questionOptions: [
-      {
-        reponseChoix: "Regime de zone a statut spécial et militaire",
-        isCorrect: false,
-      },
-      {
-        reponseChoix: "Regime de zone maritime et terrestre",
-        isCorrect: false,
-      },
-      { reponseChoix: "Regime de zone militaire et protégé", isCorrect: true },
-      {
-        reponseChoix: "Regime de zone aérienne et terrestre",
-        isCorrect: false,
-      },
     ],
   },
   {
@@ -2020,29 +2003,42 @@ const questions = [
     ],
   },
   {
-    questionText: "Quelle est l'organise qui coordone les actions de la communication institutionnelle du ministère des armées ?",
+    questionText:
+      "Quelle est l'organise qui coordone les actions de la communication institutionnelle du ministère des armées ?",
     questionOptions: [
       {
-        reponseChoix: "La cellul COM du secrétariat général pour l'administration",
+        reponseChoix:
+          "La cellul COM du secrétariat général pour l'administration",
         isCorrect: false,
       },
-      { reponseChoix: "La service de communication de l'Etat-major des armées", isCorrect: true },
+      {
+        reponseChoix: "La service de communication de l'Etat-major des armées",
+        isCorrect: true,
+      },
       {
         reponseChoix:
           "Le departement de l'information et de la communication des armées",
         isCorrect: false,
       },
-      { reponseChoix: "Le service d'information du gouvernement", isCorrect: false },
+      {
+        reponseChoix: "Le service d'information du gouvernement",
+        isCorrect: false,
+      },
     ],
   },
   {
-    questionText: "Quelle est la principale cause de compromission des réseaux informatique?",
+    questionText:
+      "Quelle est la principale cause de compromission des réseaux informatique?",
     questionOptions: [
       {
-        reponseChoix: "La compétence des attaquants qui ne cesse de s'améliorer",
+        reponseChoix:
+          "La compétence des attaquants qui ne cesse de s'améliorer",
         isCorrect: false,
       },
-      { reponseChoix: "Le manque de moyens des équipes de sécurité", isCorrect: false },
+      {
+        reponseChoix: "Le manque de moyens des équipes de sécurité",
+        isCorrect: false,
+      },
       {
         reponseChoix:
           "Le manque de respect des règles de securité informatiques par les utilisateurs",
@@ -2052,33 +2048,656 @@ const questions = [
     ],
   },
   {
-    questionText: "Donnez les sommations réglementaires en vigueur pour la protection d'une ZDHS?",
+    questionText:
+      "Donnez les sommations réglementaires en vigueur pour la protection d'une ZDHS?",
     questionOptions: [
       {
-        reponseChoix: "Halte ! - Halte ou je fais feu ! - Halte ou je fais feu !",
-        isCorrect: false,
-      },
-      { reponseChoix: "Halte ! - Halte deuxième sommation ! - Halte au chien", isCorrect: false },
-      {
         reponseChoix:
-          "Halte ! - Halte ou je fais feu",
+          "Halte ! - Halte ou je fais feu ! - Halte ou je fais feu !",
         isCorrect: false,
       },
-      { reponseChoix: "Halte! - Dernière sommation, Halte ! Ou je fais feu !", isCorrect: true },
+      {
+        reponseChoix: "Halte ! - Halte deuxième sommation ! - Halte au chien",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Halte ! - Halte ou je fais feu",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Halte! - Dernière sommation, Halte ! Ou je fais feu !",
+        isCorrect: true,
+      },
     ],
   },
   {
-    questionText: "Qu'est ce qui explique la moindre utilisation de l'aviation de bombardement à partir de fin 1915",
+    questionText:
+      "Qu'est ce qui explique la moindre utilisation de l'aviation de bombardement à partir de fin 1915",
     questionOptions: [
       {
         reponseChoix: "L'apparition du radar",
         isCorrect: false,
       },
-      { reponseChoix: "Le traité de Non-Prolifération qui limite l'usage d'un tel armement", isCorrect: false },
-      { reponseChoix: "Le manque de munition", isCorrect: true },
       {
         reponseChoix:
-          "L'efficacité croissante de la chasse grace au tir axial",
+          "Le traité de Non-Prolifération qui limite l'usage d'un tel armement",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le manque de munition", isCorrect: true },
+      {
+        reponseChoix: "L'efficacité croissante de la chasse grace au tir axial",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Quelle sont les 5 fonctions stratégiques introduites en 2008 et renforcées par le livre Blanc 2013",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Meconnaissance, Anticipation, Dissuasion, Protection, Intervention",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Connaissance, Anticipation, Dissuasion, Protection, Intervention",
+        isCorrect: true,
+      },
+      {
+        reponseChoix:
+          "Connaissance, Participation, Dissuasion, Projection, Intervention",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Connexion, Acculer, Denombrer, Projection, Intermitant",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année la France a-t-elle réintégrée le commandement de l'OTAN ?",
+    questionOptions: [
+      {
+        reponseChoix: "1950",
+        isCorrect: false,
+      },
+      { reponseChoix: "2002", isCorrect: false },
+      {
+        reponseChoix: "2010",
+        isCorrect: false,
+      },
+      { reponseChoix: "2009", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "De combien d'hommes compte l'ensemble des déploiements des 3 armées ?",
+    questionOptions: [
+      { reponseChoix: "30 000 hommes et femmes", isCorrect: true },
+      {
+        reponseChoix: "20 000 hommes et femmes",
+        isCorrect: false,
+      },
+      { reponseChoix: "1 000 000 hommes et femmes", isCorrect: false },
+      {
+        reponseChoix: "25 000 hommes et femmes",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Quelles sont les 5 membres permamnent du CSNU ?",
+    questionOptions: [
+      {
+        reponseChoix: "Chine, Inde, France, Etats-Unis, Russie",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Chine, Royaume-Uni, France, Etats-Unis, Russie",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Chine, Pologne, Ukraine, Etats-Unis, Russie",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Mongolie, Kirghizistan, Congo, Malawi, Espagne",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Lequel de ces objectifs ne fait PAS partie des missions du PSDC ?",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Les missions de conseil et d’assistance en matière militaire",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les missions humanitaires et d’évacuation",
+        isCorrect: false,
+      },
+      { reponseChoix: "Legitime défense préventive", isCorrect: true },
+      {
+        reponseChoix: "Les actions conjointes en matière de désarmement",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Opération lancée en Aout 2014, résultat de la fusion entre les opérations Serval et Epervier, en partenariat avec les principaux pays de BSS dans le but de lutter contre les GAT dans la bande sahélo-saharienne",
+    questionOptions: [
+      { reponseChoix: "Barkhane", isCorrect: true },
+      {
+        reponseChoix: "Shikra",
+        isCorrect: false,
+      },
+      { reponseChoix: "Chammal", isCorrect: false },
+      {
+        reponseChoix: "Sangaris",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Selon l'article L.1111.1, du Code de la Defense, quel est l'objet de la politique de defense ?",
+    questionOptions: [
+      {
+        reponseChoix: "Faire la guerre ",
+        isCorrect: false,
+      },
+      { reponseChoix: "Agresser", isCorrect: false },
+      {
+        reponseChoix: "Engager",
+        isCorrect: false,
+      },
+      { reponseChoix: "Assurer", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Qui est responsable de la préparation et la mise en oeuvre de la politique de défense ?",
+    questionOptions: [
+      {
+        reponseChoix: "Le président",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le premier Ministre", isCorrect: false },
+      { reponseChoix: "Le Ministère", isCorrect: true },
+      {
+        reponseChoix: "Le Ministre de la guerre",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Lequel de ces Etats ne fait pas partie de l’OTAN ?",
+    questionOptions: [
+      {
+        reponseChoix: "L'Allemagne",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le Canada", isCorrect: false },
+      {
+        reponseChoix: "La Hongrie",
+        isCorrect: false,
+      },
+      { reponseChoix: "L'Ukraine", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Quel est l’actuel Commandant suprême de la Transformation Alliée ?",
+    questionOptions: [
+      {
+        reponseChoix: "L'amiral Edmund Giambastiani",
+        isCorrect: false,
+      },
+      { reponseChoix: "Le général James Mattis", isCorrect: false },
+      { reponseChoix: "Le Général André Lanata", isCorrect: true },
+      {
+        reponseChoix: "Le général d'armée aérienne Jean-Paul Paloméros ",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Que signifie OOAD - Travail Préparatoire avant une frappe ?",
+    questionOptions: [
+      {
+        reponseChoix: "Obstruration, Désorientation, Action, Décision",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Observation, Orientation, Action, Décision",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Observation, Orientation, Actionnement, Désilusion",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Obsolescence, Orientation, Action, Décision ",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année a été créé la Communauté Européenne de Défense ?",
+    questionOptions: [
+      {
+        reponseChoix: "2018",
+        isCorrect: false,
+      },
+      { reponseChoix: "2002", isCorrect: false },
+      {
+        reponseChoix: "1960",
+        isCorrect: false,
+      },
+      { reponseChoix: "1952", isCorrect: true },
+    ],
+  },
+  {
+    questionText:
+      "Combien représente la dépense française pour l’achat et l’entretien de son arsenal nucléaire ?",
+    questionOptions: [
+      {
+        reponseChoix: "Environ 1/3 dépense d’équipement des armées",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Environ 1/2 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Environ 1/5 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Environ 4/5 dépense d’équipement des armées",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Qui est responsable de la défense nationale au titre de l’article 21 de la Constitution du 4 Octobre 1958 ?",
+    questionOptions: [
+      {
+        reponseChoix: "Le Ministre de la culture",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le President",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le Premier Ministre",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Le Ministre de l'air",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "En quelle année a été créé Vigipirate ?",
+    questionOptions: [
+      {
+        reponseChoix: "2000",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1980",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "2002",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1978",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "Combien l’OTAN compte-elle de membres à l’heure actuelle ?",
+    questionOptions: [
+      {
+        reponseChoix: "30",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "41",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "40",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "31",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "En quelle année a eu lieu le push en Algerie",
+    questionOptions: [
+      {
+        reponseChoix: "En 1961",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "En 1970",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "En 1960",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "En 1978",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En MAI 1918, les escadres de combat sont réunis au sein d'une division aérienne, de combien d'avions est-elle composée ?",
+    questionOptions: [
+      {
+        reponseChoix: "600",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "650",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "700",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "750",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Qui est l'as de la chasse française le plus titré de la Grande Guerre ?",
+    questionOptions: [
+      {
+        reponseChoix: "Madon",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Fonck",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Boyd",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Guynemer",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Que ne contient pas le système documentaire d'une activité",
+    questionOptions: [
+      {
+        reponseChoix: "L'ensemble des procédures",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les comptes rendus des audits internes",
+        isCorrect: true,
+      },
+      {
+        reponseChoix:
+          "Un tableau référant tous les documents contenus dans le système documentaire",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les modes opératoires",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Un processsus dit << opéationnel >> :",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Est chargé d'apporter des ressources aux autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Représente le coeur de métier de l'organisation",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Assure une fonction de pilotage sur d'autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Na pas d'impacte sur les autres processus de l'organisation",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Lors de la mise en place pour uen séance de tir on vous confit un PA d'accompagnement. Pour quelle raison ?",
+    questionOptions: [
+      {
+        reponseChoix:
+          "L'armement est transporté dans le meme véhicule que les munitions",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué de nuit",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué dans un contexte de temps de crise",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué a l'éxtérieur de la base aérienne",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Les éléments de soldes ci-dessous sont tous communs avec la fonction publique sauf un, lequel ?",
+    questionOptions: [
+      {
+        reponseChoix: "Indémnité de résidence",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Majoration de l'indemnité pour charge militaire",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Solde de base",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Supplément familial de solde",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Quelle est la limite d'age d'un sous-officier qui est ADC PNN",
+    questionOptions: [
+      {
+        reponseChoix: "58",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "52",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "56",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "47",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Le journalisme embarqué est une technique inventée par :",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Les services de presse américains lors de la guerre en IRAK",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Les services de presses français lors de la 1er guerre mondial",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Les services de communication lors de la guerre du Vietnam",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les services de presse lors de la guerre d'Algérie",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "Que signifie mettre en place un système de management ?",
+    questionOptions: [
+      {
+        reponseChoix: "Ecrire un référentiel de règles de management à suivre",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Définir des procédure qui ne seront plus modifiées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Définir des objectifs à atteindre associés à un panel d'actions coordonnées",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Mettre en place un logiciel de management",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année a lieu la fusion entre les forces aériennes française libre (FAFL) et l'armée de l'air de l'Afrique du nord ?",
+    questionOptions: [
+      {
+        reponseChoix: "1940",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1943",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1945",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "1946",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Parcours de carrière sous-officier - que signifie un echec définitif à la S2",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 15 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 11 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 27 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 17 ans de service",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "Quels sont les 2 type de recours de droit commun possible ?",
+    questionOptions: [
+      {
+        reponseChoix: "Contentieux ou administratif",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Contentieux et hiérarchique",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Administratif et gracieux",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Gracieux ou hiérarchique",
+        isCorrect: false,
+      },
+    ],
+  },{
+    questionText: "Il n'est pas possible que le processus soit :",
+    questionOptions: [
+      {
+        reponseChoix: "Completement isolé d'autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Transversal",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Centré sur un service plutot qu'un produit",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Révisé ou modifié dans le temps",
         isCorrect: false,
       },
     ],
