@@ -1836,9 +1836,9 @@ const questions = [
   {
     questionText: "Sur quelle support note t-on un officier",
     questionOptions: [
-      { reponseChoix: "BNIO", isCorrect: false },
+      { reponseChoix: "BNIO", isCorrect: true },
       { reponseChoix: "FNIO", isCorrect: false },
-      { reponseChoix: "BNA", isCorrect: true },
+      { reponseChoix: "BNA", isCorrect: false },
       { reponseChoix: "BNO", isCorrect: false },
     ],
   },
@@ -1937,25 +1937,6 @@ const questions = [
         isCorrect: false,
       },
       { reponseChoix: "Regime de zone militaire et protégé", isCorrect: true },
-    ],
-  },
-  {
-    questionText:
-      "Citez les 2 régimes juridique qui peuvent etre soumis aux installations militaires ?",
-    questionOptions: [
-      {
-        reponseChoix: "Regime de zone a statut spécial et militaire",
-        isCorrect: false,
-      },
-      {
-        reponseChoix: "Regime de zone maritime et terrestre",
-        isCorrect: false,
-      },
-      { reponseChoix: "Regime de zone militaire et protégé", isCorrect: true },
-      {
-        reponseChoix: "Regime de zone aérienne et terrestre",
-        isCorrect: false,
-      },
     ],
   },
   {
@@ -2115,21 +2096,21 @@ const questions = [
     questionOptions: [
       {
         reponseChoix:
-          "Meconnaissance/Anticipation,Dissuasion,Protection,Intervention",
+          "Meconnaissance, Anticipation, Dissuasion, Protection, Intervention",
         isCorrect: false,
       },
       {
         reponseChoix:
-          "Connaissance/Anticipation,Dissuasion,Protection,Intervention",
+          "Connaissance, Anticipation, Dissuasion, Protection, Intervention",
         isCorrect: true,
       },
       {
         reponseChoix:
-          "Connaissance/Participation,Dissuasion,Projection,Intervention",
+          "Connaissance, Participation, Dissuasion, Projection, Intervention",
         isCorrect: false,
       },
       {
-        reponseChoix: "Connexion/Acculer,Denombrer,Projection,Intermitant",
+        reponseChoix: "Connexion, Acculer, Denombrer, Projection, Intermitant",
         isCorrect: false,
       },
     ],
@@ -2170,19 +2151,19 @@ const questions = [
     questionText: "Quelles sont les 5 membres permamnent du CSNU ?",
     questionOptions: [
       {
-        reponseChoix: "Chine,Inde,France,Etats-Unis,Russie",
+        reponseChoix: "Chine, Inde, France, Etats-Unis, Russie",
         isCorrect: false,
       },
       {
-        reponseChoix: "Chine,Royaume-Uni,France,Etats-Unis,Russie",
+        reponseChoix: "Chine, Royaume-Uni, France, Etats-Unis, Russie",
         isCorrect: true,
       },
       {
-        reponseChoix: "Chine,Pologne,Ukraine,Etats-Unis-Russie",
+        reponseChoix: "Chine, Pologne, Ukraine, Etats-Unis, Russie",
         isCorrect: false,
       },
       {
-        reponseChoix: "Mongolie,Kirghizistan,Congo,Malawi,Espagne",
+        reponseChoix: "Mongolie, Kirghizistan, Congo, Malawi, Espagne",
         isCorrect: false,
       },
     ],
@@ -2209,7 +2190,7 @@ const questions = [
   },
   {
     questionText:
-      "Opération lancée en Aout 2014, résultat de la fusion netre les opérations Serval et Epervier, en partenariat avec les principaux pays de BSS dans le but de lutter contre les GAT dans la bande sahélo-saharienne",
+      "Opération lancée en Aout 2014, résultat de la fusion entre les opérations Serval et Epervier, en partenariat avec les principaux pays de BSS dans le but de lutter contre les GAT dans la bande sahélo-saharienne",
     questionOptions: [
       { reponseChoix: "Barkhane", isCorrect: true },
       {
@@ -2344,7 +2325,8 @@ const questions = [
         isCorrect: false,
       },
     ],
-  }, {
+  },
+  {
     questionText:
       "Qui est responsable de la défense nationale au titre de l’article 21 de la Constitution du 4 Octobre 1958 ?",
     questionOptions: [
@@ -2365,9 +2347,9 @@ const questions = [
         isCorrect: false,
       },
     ],
-  }, {
-    questionText:
-      "En quelle année a été créé Vigipirate ?",
+  },
+  {
+    questionText: "En quelle année a été créé Vigipirate ?",
     questionOptions: [
       {
         reponseChoix: "2000",
@@ -2386,9 +2368,9 @@ const questions = [
         isCorrect: true,
       },
     ],
-  },{
-    questionText:
-      "Combien l’OTAN compte-elle de membres à l’heure actuelle ?",
+  },
+  {
+    questionText: "Combien l’OTAN compte-elle de membres à l’heure actuelle ?",
     questionOptions: [
       {
         reponseChoix: "30",
@@ -2407,9 +2389,9 @@ const questions = [
         isCorrect: true,
       },
     ],
-  },{
-    questionText:
-      "En quelle année a eu lieu le push en Algerie",
+  },
+  {
+    questionText: "En quelle année a eu lieu le push en Algerie",
     questionOptions: [
       {
         reponseChoix: "En 1961",
@@ -2425,6 +2407,297 @@ const questions = [
       },
       {
         reponseChoix: "En 1978",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En MAI 1918, les escadres de combat sont réunis au sein d'une division aérienne, de combien d'avions est-elle composée ?",
+    questionOptions: [
+      {
+        reponseChoix: "600",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "650",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "700",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "750",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Qui est l'as de la chasse française le plus titré de la Grande Guerre ?",
+    questionOptions: [
+      {
+        reponseChoix: "Madon",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Fonck",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Boyd",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Guynemer",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Que ne contient pas le système documentaire d'une activité",
+    questionOptions: [
+      {
+        reponseChoix: "L'ensemble des procédures",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les comptes rendus des audits internes",
+        isCorrect: true,
+      },
+      {
+        reponseChoix:
+          "Un tableau référant tous les documents contenus dans le système documentaire",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les modes opératoires",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Un processsus dit << opéationnel >> :",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Est chargé d'apporter des ressources aux autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Représente le coeur de métier de l'organisation",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Assure une fonction de pilotage sur d'autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Na pas d'impacte sur les autres processus de l'organisation",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Lors de la mise en place pour uen séance de tir on vous confit un PA d'accompagnement. Pour quelle raison ?",
+    questionOptions: [
+      {
+        reponseChoix:
+          "L'armement est transporté dans le meme véhicule que les munitions",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué de nuit",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué dans un contexte de temps de crise",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Le tir est effectué a l'éxtérieur de la base aérienne",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Les éléments de soldes ci-dessous sont tous communs avec la fonction publique sauf un, lequel ?",
+    questionOptions: [
+      {
+        reponseChoix: "Indémnité de résidence",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Majoration de l'indemnité pour charge militaire",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Solde de base",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Supplément familial de solde",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Quelle est la limite d'age d'un sous-officier qui est ADC PNN",
+    questionOptions: [
+      {
+        reponseChoix: "58",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "52",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "56",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "47",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText: "Le journalisme embarqué est une technique inventée par :",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Les services de presse américains lors de la guerre en IRAK",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Les services de presses français lors de la 1er guerre mondial",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Les services de communication lors de la guerre du Vietnam",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Les services de presse lors de la guerre d'Algérie",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "Que signifie mettre en place un système de management ?",
+    questionOptions: [
+      {
+        reponseChoix: "Ecrire un référentiel de règles de management à suivre",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Définir des procédure qui ne seront plus modifiées",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Définir des objectifs à atteindre associés à un panel d'actions coordonnées",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Mettre en place un logiciel de management",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "En quelle année a lieu la fusion entre les forces aériennes française libre (FAFL) et l'armée de l'air de l'Afrique du nord ?",
+    questionOptions: [
+      {
+        reponseChoix: "1940",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1943",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "1945",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "1946",
+        isCorrect: false,
+      },
+    ],
+  },
+  {
+    questionText:
+      "Parcours de carrière sous-officier - que signifie un echec définitif à la S2",
+    questionOptions: [
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 15 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 11 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 27 ans de service",
+        isCorrect: false,
+      },
+      {
+        reponseChoix:
+          "Impossibilité de passer de carrière, depart à 17 ans de service",
+        isCorrect: true,
+      },
+    ],
+  },
+  {
+    questionText: "Quels sont les 2 type de recours de droit commun possible ?",
+    questionOptions: [
+      {
+        reponseChoix: "Contentieux ou administratif",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Contentieux et hiérarchique",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Administratif et gracieux",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Gracieux ou hiérarchique",
+        isCorrect: false,
+      },
+    ],
+  },{
+    questionText: "Il n'est pas possible que le processus soit :",
+    questionOptions: [
+      {
+        reponseChoix: "Completement isolé d'autres processus",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Transversal",
+        isCorrect: false,
+      },
+      {
+        reponseChoix: "Centré sur un service plutot qu'un produit",
+        isCorrect: true,
+      },
+      {
+        reponseChoix: "Révisé ou modifié dans le temps",
         isCorrect: false,
       },
     ],
