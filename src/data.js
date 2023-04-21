@@ -2754,7 +2754,7 @@ const questions = [
       },
       {
         reponseChoix: "Bactérie",
-        isCorrect: false,
+        isCorrect: true,
       },
       {
         reponseChoix: "Neurotoxine",
